@@ -66,8 +66,8 @@ const App = () => {
         <Typography variant='caption' paddingLeft='10px'>
           ランキングの項目を検索する
         </Typography>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <Box sx={{ flex: 1 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <Box sx={{ width: { xs: '85%', sm: '80%', md: '500px' } }}>
             <WindowedSelect
               className={rsearch.select1}
               placeholder={

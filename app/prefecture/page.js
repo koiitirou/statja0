@@ -62,34 +62,34 @@ export default function PrefecturePage() {
           <Typography variant='body1'>
             各都道府県の人口・面積・教育・財政などの統計データをまとめたページへのリンク一覧です。
           </Typography>
-          <Grid container rowSpacing={0.5} columns={12} columnSpacing={4}>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: { xs: 0, md: 2 } }}>
             {info3.map((s, index) => {
               return (
-                <React.Fragment key={'s-' + index}>
-                  <Grid item xs={12} md={6}>
-                    <Typography variant='h3'>{s[0]}</Typography>
-
-                    <Grid container spacing={0.5} columns={12}>
-                      {s[1].map((t, index) => {
-                        return (
-                          <React.Fragment key={'t-' + index}>
-                            <Grid item xs={3}>
-                              <Link
-                                href={'/prefecture/info/' + t.td_sq + '/category'}
-                                prefetch={false}
-                              >
-                                {t.td_lt}
-                              </Link>
-                            </Grid>
-                          </React.Fragment>
-                        );
-                      })}
-                    </Grid>
-                  </Grid>
-                </React.Fragment>
+                <Box
+                  key={'s-' + index}
+                  sx={{
+                    width: { xs: '100%', md: 'calc(50% - 16px)' },
+                    mb: 1,
+                  }}
+                >
+                  <Typography variant='h3'>{s[0]}</Typography>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, pl: 0.5 }}>
+                    {s[1].map((t, tIndex) => {
+                      return (
+                        <Link
+                          key={'t-' + tIndex}
+                          href={'/prefecture/info/' + t.td_sq + '/category'}
+                          prefetch={false}
+                        >
+                          {t.td_lt}
+                        </Link>
+                      );
+                    })}
+                  </Box>
+                </Box>
               );
             })}
-          </Grid>
+          </Box>
 
           <Typography variant='h2'>都道府県ランキングのカテゴリー一覧</Typography>
           <Typography variant='body1'>
@@ -101,13 +101,18 @@ export default function PrefecturePage() {
             <b>{len0}</b>
             の都道府県データランキングがあります。
           </Typography>
-          <Grid container rowSpacing={0.5} columns={12} columnSpacing={4}>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: { xs: 0, md: 2 } }}>
             {Object.keys(mer_refs).map((v0, i0) => {
               var params0 = mer_refs[v0].params;
               return (
                 <React.Fragment key={'s' + i0}>
                   {v0 != 'Z' && (
-                    <Grid item xs={12} md={6}>
+                    <Box
+                      sx={{
+                        width: { xs: '100%', md: 'calc(50% - 16px)' },
+                        mb: 1,
+                      }}
+                    >
                       <Typography variant='h3'>
                         <Link href={'/prefecture/' + params0.lnk} prefetch={false}>
                           {params0.nam}
@@ -127,12 +132,12 @@ export default function PrefecturePage() {
                           </Typography>
                         );
                       })}
-                    </Grid>
+                    </Box>
                   )}
                 </React.Fragment>
               );
             })}
-          </Grid>
+          </Box>
           <Typography
             variant='body2'
             fontStyle='italic'

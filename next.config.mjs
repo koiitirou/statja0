@@ -9,6 +9,14 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: '/statapi1/:path*',
+        destination: 'https://storage.googleapis.com/statapi1/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

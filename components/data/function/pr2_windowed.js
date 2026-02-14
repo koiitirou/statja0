@@ -1,6 +1,6 @@
 'use client';
 import { components, createFilter } from 'react-windowed-select';
-import React, { useState, useEffect, memo } from 'react';
+import React, { useState, useEffect, memo, Suspense } from 'react';
 import WindowedSelect from 'react-windowed-select';
 
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -36,6 +36,15 @@ const customComponents = {
     <components.ClearIndicator {...props}>clear</components.ClearIndicator>
   ),
 };
+
+const Pr2_windowed = () => {
+  return (
+    <Suspense fallback={null}>
+      <App />
+    </Suspense>
+  );
+};
+export default Pr2_windowed;
 
 const App = () => {
   const router = useRouter();
@@ -120,7 +129,8 @@ const App = () => {
     </>
   );
 };
-export default App;
+
+
 
 const Result1 = memo(function Foo(props) {
   const query0 = props.query0;

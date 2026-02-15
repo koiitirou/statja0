@@ -17,8 +17,9 @@ Object.keys(yasai_path.refs).forEach((v, i) => {
 });
 
 export default function PrefectureLnkClient({ json1, lnk, array4 }) {
-  const ref1 = array4_full.find((v) => v.params.lnk == lnk)?.params;
-  if (!ref1) return null;
+  const ref1_raw = array4_full.find((v) => v.params.lnk == lnk)?.params;
+  if (!ref1_raw) return null;
+  const ref1 = { ...ref1_raw, ln2: ref1_raw.lnk };
   
   return (
     <Layout>

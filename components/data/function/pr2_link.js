@@ -96,43 +96,43 @@ function SubCategory({ c2s, ref1, json1, ref2 }, i2) {
   c2s.url = Array.isArray(c2s.url) ? c2s.url : [c2s.url];
   return (
     <React.Fragment key={'d' + i2}>
-      <Grid item xs={6} sm={5}>
+      <Grid size={{ xs: 6, sm: 5 }}>
         <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
           ランキング分類
         </Typography>
       </Grid>
 
-      <Grid item xs={1.8} sm={1.4}>
+      <Grid size={{ xs: 1.8, sm: 1.4 }}>
         <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
           1位
         </Typography>
       </Grid>
-      <Grid item xs={1.8} sm={1.4}>
+      <Grid size={{ xs: 1.8, sm: 1.4 }}>
         <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
           2位
         </Typography>
       </Grid>
-      <Grid item xs={1.8} sm={1.4}>
+      <Grid size={{ xs: 1.8, sm: 1.4 }}>
         <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
           3位
         </Typography>
       </Grid>
-      <Grid item xs={1.8} sm={1.4} display={{ xs: 'none', sm: 'block' }}>
+      <Grid size={{ xs: 1.8, sm: 1.4 }} display={{ xs: 'none', sm: 'block' }}>
         <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
           最下位
         </Typography>
       </Grid>
-      <Grid item xs={1.3} sm={0.9} display={{ xs: 'none', sm: 'block' }}>
+      <Grid size={{ xs: 1.3, sm: 0.9 }} display={{ xs: 'none', sm: 'block' }}>
         <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
           年度
         </Typography>
       </Grid>
-      <Grid item xs={0.6} sm={0.5}></Grid>
+      <Grid size={{ xs: 0.6, sm: 0.5 }}></Grid>
       {c2s.url.map((v3, i3) => {
         var cur1 = json1.cur.find((s) => s.u == v3);
         return (
           <React.Fragment key={'e' + i3}>
-            <Grid item xs={6} sm={5} borderTop={1} borderColor='#ddd'>
+            <Grid size={{ xs: 6, sm: 5 }} borderTop={1} borderColor='#ddd'>
               <Typography variant='body1' fontSize={{ xs: '13px', sm: '16px' }}>
                 <AnalyticsRoundedIcon sx={{ verticalAlign: 'bottom' }} />
                 <Link
@@ -147,7 +147,7 @@ function SubCategory({ c2s, ref1, json1, ref2 }, i2) {
                 </Link>
               </Typography>
             </Grid>
-            <Grid item xs={1.8} sm={1.4} borderTop={1} borderColor='#ddd'>
+            <Grid size={{ xs: 1.8, sm: 1.4 }} borderTop={1} borderColor='#ddd'>
               {cur1 && (
                 <Typography variant='body1' fontSize={{ xs: '12px', sm: '14px' }}>
                   <img
@@ -163,7 +163,7 @@ function SubCategory({ c2s, ref1, json1, ref2 }, i2) {
               )}
             </Grid>
 
-            <Grid item xs={1.8} sm={1.4} borderTop={1} borderColor='#ddd'>
+            <Grid size={{ xs: 1.8, sm: 1.4 }} borderTop={1} borderColor='#ddd'>
               {cur1 && (
                 <Typography variant='body1' fontSize={{ xs: '12px', sm: '14px' }}>
                   <img
@@ -178,7 +178,7 @@ function SubCategory({ c2s, ref1, json1, ref2 }, i2) {
                 </Typography>
               )}
             </Grid>
-            <Grid item xs={1.8} sm={1.4} borderTop={1} borderColor='#ddd'>
+            <Grid size={{ xs: 1.8, sm: 1.4 }} borderTop={1} borderColor='#ddd'>
               {cur1 && (
                 <Typography variant='body1' fontSize={{ xs: '12px', sm: '14px' }}>
                   <img
@@ -194,9 +194,7 @@ function SubCategory({ c2s, ref1, json1, ref2 }, i2) {
               )}
             </Grid>
             <Grid
-              item
-              xs={1.8}
-              sm={1.4}
+              size={{ xs: 1.8, sm: 1.4 }}
               borderTop={1}
               borderColor='#ddd'
               display={{ xs: 'none', sm: 'block' }}
@@ -217,9 +215,7 @@ function SubCategory({ c2s, ref1, json1, ref2 }, i2) {
             </Grid>
 
             <Grid
-              item
-              xs={1.9}
-              sm={1.4}
+              size={{ xs: 1.9, sm: 1.4 }}
               borderTop={1}
               borderColor='#ddd'
               display={{ xs: 'none', sm: 'block' }}

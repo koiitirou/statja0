@@ -1,0 +1,128 @@
+.retable td {
+  padding: 5px 2px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.retable .table1 td:nth-child(2) {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.retable .table1 td:nth-child(1),
+.retable .table1 td:nth-child(3),
+.retable .table1 td:nth-child(4),
+.retable .table1 td:nth-child(5),
+.retable .table1 td:nth-child(6) {
+  text-align: left;
+}
+.retable .table1 td:nth-child(3) .cnt_value,
+.retable .table1 td:nth-child(4) .cnt_value,
+.retable .table1 td:nth-child(5) .cnt_value,
+.retable .table1 td:nth-child(6) .cnt_value {
+  text-align: center;
+}
+.retable .table1 td:nth-child(7) {
+  text-align: center;
+}
+.retable th {
+  color: black;
+  padding: 7px 2px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.retable .world1 tbody tr:nth-of-type(even),
+tbody .tr1:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+.retable .tr1:nth-last-of-type(1) {
+  font-weight: bold;
+}
+
+.retable select {
+  font-size: 12px;
+}
+.retable .pagination {
+  font-size: 12px;
+}
+@media (min-width: 900px) {
+  .retable .pagination,
+  .retable td,
+  .retable th,
+  .retable .filter,
+  .retable select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .retable .table1 td:nth-child(7),
+  .retable .table1 th:nth-child(7),
+  .retable .table1 td:nth-child(6),
+  .retable .table1 th:nth-child(6),
+  .retable .table1 td:nth-child(5),
+  .retable .table1 th:nth-child(5) {
+    display: none;
+  }
+}
+.retable td a {
+  text-decoration: none;
+}
+
+.retable {
+  overflow-x: scroll;
+}
+.retable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.retable th span input {
+  font-size: 16px;
+}
+
+.retable .filter {
+  border: 0;
+  padding-left: 5px;
+}
+
+.retable .table1 td:nth-child(4) div.p3 {
+  height: 24px;
+  background-color: #60dbb4;
+  display: block;
+}
+
+.retable .table1 td:nth-child(4) div.p2 {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.retable .table1 td:nth-child(4) div.p1 {
+  display: block;
+  position: relative;
+}
+
+.retable .table1 td:nth-child(4) div.p4 {
+  border: 1px solid lightgrey;
+}
+
+.retable .table1 span.pl1 {
+  color: seagreen;
+}
+
+.retable .table1 span.mi1 {
+  color: red;
+}
+.tiptable tbody {
+  -webkit-text-stroke: 0.1px #000;
+}
+.tiptable td:nth-child(1) {
+  text-align: left;
+}
+.tiptable td:nth-child(2) {
+  text-align: right;
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "lnk": "health",
+    "ids": "8",
+    "nam": "人口・健康"
+  },
+  {
+    "lnk": "economy",
+    "ids": "3",
+    "nam": "経済"
+  },
+  {
+    "lnk": "financial",
+    "ids": "7",
+    "nam": "金融"
+  },
+  {
+    "lnk": "agriculture",
+    "ids": "1",
+    "nam": "農業"
+  },
+  {
+    "lnk": "aid",
+    "ids": "2",
+    "nam": "国際援助"
+  },
+  {
+    "lnk": "education",
+    "ids": "4",
+    "nam": "教育"
+  },
+  {
+    "lnk": "energy",
+    "ids": "5",
+    "nam": "エネルギー"
+  },
+  {
+    "lnk": "environment",
+    "ids": "6",
+    "nam": "環境"
+  },
+  {
+    "lnk": "infrastructure",
+    "ids": "9",
+    "nam": "インフラ"
+  },
+  {
+    "lnk": "social",
+    "ids": "10",
+    "nam": "社会保護"
+  },
+  {
+    "lnk": "poverty",
+    "ids": "11",
+    "nam": "貧困"
+  },
+  {
+    "lnk": "private",
+    "ids": "12",
+    "nam": "ビジネス"
+  },
+  {
+    "lnk": "public",
+    "ids": "13",
+    "nam": "公費"
+  },
+  {
+    "lnk": "science",
+    "ids": "14",
+    "nam": "科学技術"
+  },
+  {
+    "lnk": "urban",
+    "ids": "16",
+    "nam": "都市開発"
+  },
+  {
+    "lnk": "gender",
+    "ids": "17",
+    "nam": "ジェンダー"
+  },
+  {
+    "lnk": "mdgs",
+    "ids": "18",
+    "nam": "MDGs"
+  },
+  {
+    "lnk": "climate",
+    "ids": "19",
+    "nam": "気候"
+  },
+  {
+    "lnk": "trade",
+    "ids": "20",
+    "nam": "貿易"
+  },
+  {
+    "lnk": "other",
+    "ids": "100",
+    "nam": "その他"
+  }
+]

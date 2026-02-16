@@ -106,7 +106,7 @@ const App = ({ ssg1, did1, marks, columns, graphList, time_list2, cls1 }) => {
     setInit1(init2);
   }, []);
   useEffect(() => {
-    if (isLoaded & (ydata != null)) {
+    if (isLoaded & (ydata != null) && ydata.tab[value]) {
       setData(ydata.tab[value].data);
     }
   }, [ydata, value, isLoaded]);
@@ -206,9 +206,12 @@ const App = ({ ssg1, did1, marks, columns, graphList, time_list2, cls1 }) => {
       time_list2.forEach((v0, i0) => {
         var child2 = {};
         child2['year'] = v0;
+        if (!ydata.tab[v0]) return;
         did_list1.forEach((v1, i1) => {
           var th_categories = ydata.tab[v0].data.find((s0) => s0.i == did_list1[i1]);
-          var th_categories_base = ydata.tab[time_list2[time_list2.length - 1]].data.find(
+          var lastYear = time_list2[time_list2.length - 1];
+          if (!ydata.tab[lastYear]) return;
+          var th_categories_base = ydata.tab[lastYear].data.find(
             (s0) => s0.i == did_list1[i1],
           );
 

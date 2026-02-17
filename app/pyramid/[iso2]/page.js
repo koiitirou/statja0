@@ -6,6 +6,9 @@ import PyramidClient from './PyramidClient';
 
 const pop_path = pop_path0.concat(pop_path11).concat(pop_path12);
 
+export const dynamic = 'force-static';
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   return [];
 }

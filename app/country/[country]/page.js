@@ -9,6 +9,9 @@ wor_path.topic.forEach((v) => {
   options1.push(v.nm1);
 });
 
+export const dynamic = 'force-static';
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   return [];
 }

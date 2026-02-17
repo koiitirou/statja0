@@ -12,10 +12,13 @@ const Checkup = dynamic(
 export default function CheckupCidClient({ cid, ssg1, ssg2 }) {
   return (
     <Layout>
-      <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
-        <Checkup ssg1={ssg1} ssg2={ssg2} />
+      <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+        <Box sx={{ [theme.breakpoints.up('md')]: { maxWidth: '1300px', margin: 'auto' } }}>
+          <Checkup ssg1={ssg1} ssg2={ssg2} />
+        </Box>
       </Box>
     </Layout>
   );
 }
+
 

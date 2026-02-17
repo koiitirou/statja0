@@ -21,10 +21,12 @@ export default function NdbEidClient({ eid, ssg1, ssg2, kbn1, graphList, graphLi
   const did1 = eid;
   return (
     <Layout>
-      <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
-        <Windowed />
-        <Retable did1={did1} ssg1={ssg1} ssg2={ssg2} kbn1={kbn1} graphList={graphList} />
-        <Retable2 did1={did1} ssg1={ssg2} kbn1={kbn1} graphList={graphList2} />
+      <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+        <Box sx={{ [theme.breakpoints.up('md')]: { maxWidth: '1300px', margin: 'auto' } }}>
+          <Windowed />
+          <Retable did1={did1} ssg1={ssg1} ssg2={ssg2} kbn1={kbn1} graphList={graphList} />
+          <Retable2 did1={did1} ssg1={ssg2} kbn1={kbn1} graphList={graphList2} />
+        </Box>
       </Box>
     </Layout>
   );

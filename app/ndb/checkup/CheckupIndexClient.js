@@ -18,7 +18,7 @@ export default function CheckupIndexClient({ checkup_path, summary_mean }) {
   const description1 = '特定健診データの平均値の推移を性別・年齢別・都道府県別にまとめました。';
   return (
     <Layout>
-    <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
+    <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
       <Typography variant='h1'>{title1}</Typography>
       <Typography variant='body1'>{description1}</Typography>
       <Typography variant='h2'>特定健診各項目の平均値（合計）{sum1[0].dat.eyr}</Typography>

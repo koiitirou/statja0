@@ -16,14 +16,17 @@ const Pyramid2 = dynamic(
 export default function PrescriptionClient({ id2, res2, con_name }) {
   return (
     <Layout>
-      <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
-        <Typography variant='h1' component='h1'>
-          {con_name}の処方数・売上・薬価の推移
-        </Typography>
-        <Windowed />
-        <Pyramid2 res2={res2} con_name={con_name} />
+      <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+        <Box sx={{ [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' } }}>
+          <Windowed />
+          <Typography variant='h1' sx={{ background: 'lightgrey', padding: '8px' }}>
+            {con_name}の処方数・売上・薬価の推移
+          </Typography>
+          <Pyramid2 res2={res2} con_name={con_name} />
+        </Box>
       </Box>
     </Layout>
   );
 }
+
 

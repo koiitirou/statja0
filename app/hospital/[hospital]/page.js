@@ -13,19 +13,21 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { hospital } = await params;
-  const res = await fetch(`${server}/hospital/${hospital}_ssg.json`, { next: { revalidate: false } });
+  const res = await fetch(`${server}/hospital3/${hospital}_ssg.json`, { next: { revalidate: false } });
   if (!res.ok) return { title: '病院' };
   const ssg2 = await res.json();
   const hName = ssg2.def.hospital;
+  const title1 = `${hName}の手術件数・入院数・治療実績ランキング${ssg2.def.time_list2[0]}〜${ssg2.def.time_list2[ssg2.def.time_list2.length - 1]}`;
+  const desc1 = `${hName}の入院数(月平均)・手術件数・治療実績・在院日数・その他基本情報をDPCオープンデータをもとにまとめています。ランキング順位は全国、都道府県別に集計しています。`;
   return {
-    title: `${hName}の治療実績と症例数ランキング・手術件数`,
-    description: `${hName}の治療実績と症例数ランキング。入院患者数（症例数）・手術件数・在院日数を他の病院と比較。DPCオープンデータをもとにまとめています。`,
+    title: title1,
+    description: desc1,
   };
 }
 
 export default async function HospitalDetailPage({ params }) {
   const { hospital } = await params;
-  const res = await fetch(`${server}/hospital/${hospital}_ssg.json`, { next: { revalidate: false } });
+  const res = await fetch(`${server}/hospital3/${hospital}_ssg.json`, { next: { revalidate: false } });
   if (!res.ok) return <div>データが見つかりません</div>;
   const ssg2 = await res.json();
 

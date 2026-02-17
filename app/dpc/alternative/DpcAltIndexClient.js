@@ -1,5 +1,6 @@
 'use client';
 import { Box, Typography } from '@mui/material';
+import { Layout } from '@/components/layout';
 import React, { Fragment } from 'react';
 import Search_dpc from '@/components/data/function/search_dpc';
 import array4 from '@/public/comp/data/link/dpc_alternative_path.json';
@@ -20,6 +21,7 @@ const DpcAltIndexClient = () => {
   const desc2 = `病名一覧から、全国・各都道府県の病院の診療実績（症例数、手術数、在院日数）を比較することができます。`;
 
   return (
+    <Layout>
     <Box
       sx={{
         p: 1,
@@ -61,6 +63,7 @@ const DpcAltIndexClient = () => {
         );
       })}
     </Box>
+    </Layout>
   );
 };
 

@@ -7,6 +7,7 @@ import {
   useGlobalFilter,
   useAsyncDebounce,
   useRowSelect,
+  usePagination,
 } from 'react-table';
 import { useMemo, Fragment, useState, useEffect, memo } from 'react';
 import React from 'react';
@@ -17,6 +18,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   IconButton,
+  Button,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import index_data from '@/components/prefecture/index_data.json';
@@ -191,27 +193,36 @@ const App = ({ ssg1, did1, graphList, time_list2, yearList, columns, dhsh, tArra
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rows,
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
     prepareRow,
     preGlobalFilteredRows,
     visibleColumns,
     setGlobalFilter,
     state,
     selectedFlatRows,
-    state: { selectedRowIds },
+    state: { selectedRowIds, pageIndex },
   } = useTable(
     {
       columns,
       data,
-      initialState: init1,
+      initialState: { ...init1, pageSize: 100, pageIndex: 0 },
       filterTypes,
       autoResetFilters: false,
       autoResetSortBy: false,
       autoResetGlobalFilter: false,
+      autoResetPage: false,
     },
     useFilters,
     useGlobalFilter,
     useSortBy,
+    usePagination,
     useRowSelect,
     (hooks) => {
       hooks.visibleColumns.push((columns) => [
@@ -409,7 +420,7 @@ const App = ({ ssg1, did1, graphList, time_list2, yearList, columns, dhsh, tArra
             </tr>
           </thead>
           <tbody {...getTableBodyProps()} className={classes.tb}>
-            {rows.map((row, index2) => {
+            {page.map((row, index2) => {
               prepareRow(row);
               const { key: rKey, ...rowProps } = row.getRowProps();
               return (
@@ -436,6 +447,40 @@ const App = ({ ssg1, did1, graphList, time_list2, yearList, columns, dhsh, tArra
             })}
           </tbody>
         </table>
+        {/* Pagination */}
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 1, mt: 2, mb: 2, flexWrap: 'wrap' }}>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => gotoPage(0)} disabled={!canPreviousPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'<<'}
+          </Button>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => previousPage()} disabled={!canPreviousPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'<'}
+          </Button>
+          <Typography variant='body2' sx={{ mx: 1, color: '#333' }}>
+            {pageIndex + 1} / {pageOptions.length} ページ
+          </Typography>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => nextPage()} disabled={!canNextPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'>'}
+          </Button>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'>>'}
+          </Button>
+        </Box>
       </Box>
       <Typography variant='caption'>
         　*各病院で件数が10件未満のものは集計されていません。

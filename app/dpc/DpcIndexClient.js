@@ -1,6 +1,7 @@
 'use client';
 import regeneratorRuntime from 'regenerator-runtime';
 import { Box, Grid, Typography } from '@mui/material';
+import { Layout } from '@/components/layout';
 import React from 'react';
 import Search_dpc from '@/components/data/function/search_dpc';
 import array4 from '@/public/comp/data/link/dpc_ssg_list2.json';
@@ -160,6 +161,7 @@ const DpcIndexClient = () => {
   }
 
   return (
+    <Layout>
     <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
       <Search_dpc />
       <Typography variant='h2'>よく見られている病院</Typography>
@@ -250,6 +252,7 @@ const DpcIndexClient = () => {
         </Box>
       </Box>
     </Box>
+    </Layout>
   );
 };
 

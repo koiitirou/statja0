@@ -1,12 +1,13 @@
 'use client';
 import regeneratorRuntime from 'regenerator-runtime';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, Button } from '@mui/material';
+import { Layout } from '@/components/layout';
 import React from 'react';
 import Search_dpc from '@/components/data/function/search_dpc';
 import array4 from '@/public/comp/data/link/hospital_ssg_list.json';
 import classes from '@/components/d3css/retable.module.css';
 import Link from 'next/link';
-import { useTable, useSortBy, useFilters, useGlobalFilter, useAsyncDebounce } from 'react-table';
+import { useTable, useSortBy, useFilters, useGlobalFilter, useAsyncDebounce, usePagination } from 'react-table';
 import { useMemo, useState, useEffect } from 'react';
 import { matchSorter } from 'match-sorter';
 import PopularClient from '@/components/data/function/popularClient.js';
@@ -96,7 +97,6 @@ const HospitalIndexClient = () => {
   columns[0].Filter = SelectColumnFilter;
   columns[0].filter = 'includes';
   columns[0].disableSortBy = true;
-  var init1 = [];
 
   const filterTypes = useMemo(
     () => ({
@@ -116,22 +116,32 @@ const HospitalIndexClient = () => {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rows,
+    // pagination
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
     prepareRow,
     preGlobalFilteredRows,
     visibleColumns,
     setGlobalFilter,
     state,
+    state: { pageIndex },
   } = useTable(
     {
       columns,
       data,
-      initialState: init1,
+      initialState: { pageSize: 100, pageIndex: 0 },
       filterTypes,
     },
     useFilters,
     useGlobalFilter,
     useSortBy,
+    usePagination,
   );
 
   /////////////////column filter
@@ -164,6 +174,7 @@ const HospitalIndexClient = () => {
   }, []);
   const desc2 = `入院患者数(月平均)ランキングの第1位は${data[0].hsn}で${data[0].apn}人、第2位は${data[1].hsn}で${data[1].apn}人、第3位は${data[2].hsn}で${data[2].apn}人、第4位は${data[3].hsn}で${data[3].apn}人でした。`;
   return (
+    <Layout>
     <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
       <Search_dpc />
       <Typography variant='h2'>よく見られている病院</Typography>
@@ -228,7 +239,7 @@ const HospitalIndexClient = () => {
               </tr>
             </thead>
             <tbody {...getTableBodyProps()} className={classes.tb}>
-              {rows.map((row, index2) => {
+              {page.map((row, index2) => {
                 prepareRow(row);
                 const { key: rKey, ...rowProps } = row.getRowProps();
                 return (
@@ -260,8 +271,43 @@ const HospitalIndexClient = () => {
             </tbody>
           </table>
         </Box>
+        {/* Pagination */}
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 1, mt: 2, mb: 2, flexWrap: 'wrap' }}>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => gotoPage(0)} disabled={!canPreviousPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'<<'}
+          </Button>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => previousPage()} disabled={!canPreviousPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'<'}
+          </Button>
+          <Typography variant='body2' sx={{ mx: 1, color: '#333' }}>
+            {pageIndex + 1} / {pageOptions.length} ページ
+          </Typography>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => nextPage()} disabled={!canNextPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'>'}
+          </Button>
+          <Button
+            variant='outlined' size='small'
+            onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}
+            sx={{ color: '#1976d2', borderColor: '#1976d2', '&.Mui-disabled': { color: '#bdbdbd', borderColor: '#e0e0e0' } }}
+          >
+            {'>>'}
+          </Button>
+        </Box>
       </Box>
     </Box>
+    </Layout>
   );
 };
 

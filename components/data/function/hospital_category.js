@@ -1,0 +1,536 @@
+'use client';
+import regeneratorRuntime from 'regenerator-runtime';
+import { Box, Typography } from '@mui/material';
+import classes from '@/components/d3css/retableh.module.css';
+import Link from 'next/link';
+import React from 'react';
+import {
+  useTable,
+  useSortBy,
+  useFilters,
+  useGlobalFilter,
+  useAsyncDebounce,
+  useRowSelect,
+} from 'react-table';
+import { useMemo, Fragment, useState, useEffect, memo } from 'react';
+import { matchSorter } from 'match-sorter';
+import dynamic from 'next/dynamic';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  Surface,
+  Symbols,
+} from 'recharts';
+import palette1 from '@/components/dpc/palette.json';
+const Select = dynamic(() => import('react-select').then((mod) => mod.default), {
+  ssr: false,
+  loading: () => null,
+});
+
+// eslint-disable-next-line react/display-name
+const IndeterminateCheckbox = React.forwardRef(({ indeterminate, ...rest }, ref) => {
+  const defaultRef = React.useRef();
+  const resolvedRef = ref || defaultRef;
+
+  React.useEffect(() => {
+    resolvedRef.current.indeterminate = indeterminate;
+  }, [resolvedRef, indeterminate]);
+
+  return (
+    <>
+      <input type='checkbox' ref={resolvedRef} {...rest} />
+    </>
+  );
+});
+
+function GlobalFilter({ preGlobalFilteredRows, globalFilter, setGlobalFilter }) {
+  const count = preGlobalFilteredRows.length;
+  const [value, setValue] = useState(globalFilter);
+  const onChange = useAsyncDebounce((value) => {
+    setGlobalFilter(value || undefined);
+  }, 200);
+
+  return (
+    <span className={classes.filter}>
+      検索:{' '}
+      <input
+        value={value || ''}
+        onChange={(e) => {
+          setValue(e.target.value);
+          onChange(e.target.value);
+        }}
+        placeholder={`${count} 件...`}
+        className={classes.filter}
+      />
+    </span>
+  );
+}
+function fuzzyTextFilterFn(rows, id, filterValue) {
+  return matchSorter(rows, filterValue, { keys: [(row) => row.values[id]] });
+}
+
+fuzzyTextFilterFn.autoRemove = (val) => !val;
+
+//////////
+const App = ({ ssg2, hospital1, isLoaded, ydata }) => {
+  const columns = [
+    { Header: '診断分類', accessor: 'nic' },
+    { Header: '病気名', accessor: 'di2' },
+    {
+      Header: '順位',
+      columns: [
+        { Header: ssg2.def.short_name, accessor: 'prk' },
+        { Header: '全国', accessor: 'ark' },
+      ],
+    },
+    {
+      Header: '治療実績(件数)',
+      columns: [
+        { Header: '合計', accessor: 'kll' },
+        { Header: '手術あり', accessor: 'kes' },
+        { Header: '手術なし', accessor: 'kon' },
+      ],
+    },
+    {
+      Header: '在院日数(日)',
+      columns: [
+        { Header: '合計', accessor: 'zll' },
+        { Header: '手術あり', accessor: 'zes' },
+        { Header: '手術なし', accessor: 'zon' },
+      ],
+    },
+  ];
+  const graphList = [
+    { value: 'prk', label: `順位(${ssg2.def.short_name})`, unit: '位', rev: true },
+    { value: 'ark', label: '順位(全国)', unit: '位', rev: true },
+    { value: 'kll', label: '治療実績(合計)', unit: '件', rev: false },
+    { value: 'kes', label: '治療実績(手術あり)', unit: '件', rev: false },
+    { value: 'kon', label: '治療実績(手術なし)', unit: '件', rev: false },
+    { value: 'zll', label: '在院日数(合計)', unit: '日', rev: false },
+    { value: 'zes', label: '在院日数(手術あり)', unit: '日', rev: false },
+    { value: 'zon', label: '在院日数(手術なし)', unit: '日', rev: false },
+  ];
+  const yearLatest = ssg2.def.time_category[ssg2.def.time_category.length - 1];
+  const yearList = [];
+
+  for (let i = 0; i < ssg2.def.time_category.length; i++) {
+    var thisYear = {};
+    thisYear['value'] = ssg2.def.time_category[i];
+    thisYear['label'] = ssg2.def.time_category[i];
+    yearList.push(thisYear);
+  }
+  const [graph, setGraph] = useState(graphList[2]);
+  const [year, setYear] = useState(yearLatest);
+  const [data, setData] = useState(ssg2.category[yearLatest].categories);
+  const [options1, setOptions1] = useState(ssg2.category[yearLatest].nics);
+  columns[0].Filter = SelectColumnFilter;
+  columns[0].filter = 'includes';
+  columns[0].disableSortBy = true;
+
+  const [init1, setInit1] = useState([]);
+  useEffect(() => {
+    setInit1([]);
+  }, [year]);
+  useEffect(() => {
+    if (did_list1 != undefined) {
+      var init2 = {
+        selectedRowIds: {},
+      };
+      did_list1.forEach((v0, i0) => {
+        if (i0 > 10) {
+          return;
+        }
+        init2.selectedRowIds[
+          ssg2.category[yearLatest].categories.findIndex((s) => s.did == v0)
+        ] = true;
+      });
+    } else {
+      var init2 = {
+        selectedRowIds: {
+          0: true,
+        },
+      };
+    }
+    setInit1(init2);
+  }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      ydata ? setData(ydata.category[year].categories) : '';
+      ydata ? setOptions1(ydata.category[year].nics) : '';
+    }
+  }, [ydata, isLoaded, year]);
+
+  const [chartData, setChartData] = useState([]);
+  const [did_list1, setDid] = useState(ssg2.def.did_list1);
+  const [dis_list1, setDnm] = useState(ssg2.def.dis_list1);
+
+  const filterTypes = useMemo(
+    () => ({
+      fuzzyText: fuzzyTextFilterFn,
+      text: (rows, id, filterValue) => {
+        return rows.filter((row) => {
+          const rowValue = row.values[id];
+          return rowValue !== undefined
+            ? String(rowValue).toLowerCase().startsWith(String(filterValue).toLowerCase())
+            : true;
+        });
+      },
+    }),
+    [],
+  );
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+    preGlobalFilteredRows,
+    visibleColumns,
+    setGlobalFilter,
+    state,
+    selectedFlatRows,
+    state: { selectedRowIds },
+  } = useTable(
+    {
+      columns,
+      data,
+      initialState: init1,
+      filterTypes,
+      autoResetFilters: false,
+      autoResetSortBy: false,
+      autoResetGlobalFilter: false,
+      autoResetHiddenColumns: false,
+    },
+    useFilters,
+    useGlobalFilter,
+    useSortBy,
+    useRowSelect,
+    (hooks) => {
+      hooks.visibleColumns.push((columns) => [
+        {
+          id: 'selection',
+          Header: ({ getToggleAllRowsSelectedProps }) => (
+            <div>
+              <IndeterminateCheckbox {...getToggleAllRowsSelectedProps()} />
+            </div>
+          ),
+          Cell: ({ row }) => (
+            <div>
+              <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
+            </div>
+          ),
+        },
+        ...columns,
+      ]);
+    },
+  );
+
+  /////////////////column filter
+  function SelectColumnFilter({ column: { filterValue, setFilter, preFilteredRows, id } }) {
+    return (
+      <select
+        value={filterValue}
+        onChange={(e) => {
+          setFilter(e.target.value || undefined);
+        }}
+      >
+        <option value=''>すべて</option>
+        {options1.map((option, i) => {
+          var aa1 = option;
+          return (
+            <option key={i} value={aa1}>
+              {aa1}
+            </option>
+          );
+        })}
+      </select>
+    );
+  }
+  ///////////
+  /////////
+  const check_length = selectedFlatRows.length;
+  useEffect(() => {
+    if (ydata) {
+      var did_list2 = [];
+      var dis_list2 = [];
+      selectedFlatRows.forEach((v, i) => {
+        if (i > 10) {
+          return;
+        }
+        did_list2.push(v.original.di2[1]);
+        dis_list2.push(v.original.di2[0]);
+      });
+      setDid(did_list2);
+      setDnm(dis_list2);
+    }
+  }, [check_length]);
+
+  useEffect(() => {
+    if (ydata && did_list1 != undefined) {
+      var child1 = [];
+      Object.keys(ydata.category).forEach((v0, i0) => {
+        var child2 = {};
+        child2['year'] = v0;
+        did_list1.forEach((v1, i1) => {
+          var th_categories = ydata.category[v0].categories.find((s0) => s0.did == did_list1[i1]);
+          if (th_categories) {
+            if (th_categories[graph.value] != '') {
+              child2[th_categories.dis] = Number(th_categories[graph.value]);
+            }
+          }
+        });
+        child1.push(child2);
+      });
+      setChartData(child1);
+    }
+  }, [check_length, graph, did_list1]);
+  return (
+    <Box className={classes.retable}>
+      {chartData != [] && (
+        <Suiig
+          ssg2={ssg2}
+          graphList={graphList}
+          graph={graph}
+          setGraph={setGraph}
+          dis_list1={dis_list1}
+          chartData={chartData}
+        />
+      )}
+      <Typography variant='h2'>
+        {ssg2.def.hospital}の症例数ランキング・手術件数・在院日数 {year}
+      </Typography>
+      <Box sx={{ maxWidth: '400px' }}>
+        {isLoaded && (
+          <Select
+            placeholder={'年度を選択する'}
+            filterOption={false}
+            options={yearList}
+            onChange={(e) => {
+              setYear(e.value);
+            }}
+            isSearchable={false}
+            id='selectbox3'
+            instanceId='selectbox3'
+          />
+        )}
+      </Box>
+      <Box sx={{ overflowX: 'auto' }} className={[classes.hospital1, classes.table4].join(' ')}>
+        <table
+          {...getTableProps()}
+          className={classes.table3}
+        >
+          <thead>
+            {headerGroups.map((headerGroup, index1) => {
+              const { key: hgKey, ...hgProps } = headerGroup.getHeaderGroupProps();
+              return (
+              <tr key={'s' + index1} {...hgProps}>
+                {headerGroup.headers.map((column, index12) => {
+                  const { key: _k1, ...sortProps } = column.getHeaderProps(column.getSortByToggleProps());
+                  const { key: _k2, ...colProps } = column.getHeaderProps();
+                  return (
+                  <th
+                    key={'t' + index12}
+                    {...sortProps}
+                    {...colProps}
+                  >
+                    {column.render('Header')}
+                    <span>
+                      {column.isSorted && !column.disableSortBy
+                        ? column.isSortedDesc
+                          ? ' 🔽'
+                          : ' 🔼'
+                        : ''}
+                    </span>
+                    <div>{column.Header == '診断分類' ? column.render('Filter') : null}</div>
+                  </th>
+                  );
+                })}
+              </tr>
+              );
+            })}
+            <tr>
+              <th
+                colSpan={visibleColumns.length}
+                style={{
+                  textAlign: 'left',
+                }}
+              >
+                <GlobalFilter
+                  preGlobalFilteredRows={preGlobalFilteredRows}
+                  globalFilter={state.globalFilter}
+                  setGlobalFilter={setGlobalFilter}
+                />
+              </th>
+            </tr>
+          </thead>
+          <tbody {...getTableBodyProps()} className={classes.tb}>
+            {rows.map((row, index2) => {
+              prepareRow(row);
+              const { key: rKey, ...rowProps } = row.getRowProps();
+              return (
+                <tr key={'u' + index2} {...rowProps}>
+                  {row.cells.map((cell, index3) => {
+                    const { key: cKey, ...cellProps } = cell.getCellProps();
+                    return (
+                      <td
+                        key={'v' + index3}
+                        {...cellProps}
+                      >
+                        {index3 != 2 ? (
+                          cell.render('Cell')
+                        ) : (
+                          <Link prefetch={false} href={'/dpc/' + cell.value[1]}>
+                            {cell.value[0]}
+                          </Link>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </Box>
+    </Box>
+  );
+};
+export default App;
+
+// eslint-disable-next-line react/display-name
+const Suiig = memo((props) => {
+  const CustomTooltip2 = (prps2) => {
+    const payload = prps2.payload;
+    const label = prps2.label;
+
+    if (prps2.active && payload && payload.length) {
+      return (
+        <>
+          <div>
+            <Box
+              sx={{
+                backgroundColor: 'white',
+                opacity: '0.9',
+                padding: '5px 10px 5px 10px',
+              }}
+            >
+              <Typography style={{ fontSize: '14px', color: 'dimgrey' }}>
+                {label} {props.ssg2.def.hospital}
+              </Typography>
+              <table className={classes.tiptable} style={{ fontSize: '14px' }}>
+                <thead>
+                  <tr>
+                    <th>病気名</th>
+                    <th>{props.graph.label}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {payload.map((v, i) => {
+                    return (
+                      <React.Fragment key={'t' + i}>
+                        <tr>
+                          <td>
+                            <Surface width={10} height={10}>
+                              <Symbols
+                                cx={5}
+                                cy={5}
+                                type='circle'
+                                size={50}
+                                fill={payload[i].color}
+                              />
+                            </Surface>
+                            {payload[i].dataKey}
+                          </td>
+                          <td style={{ color: payload[i].color }}>
+                            {payload[i].value}
+                            {props.graph.unit}
+                          </td>
+                        </tr>
+                      </React.Fragment>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </Box>
+          </div>
+        </>
+      );
+    }
+
+    return null;
+  };
+  ////////////////////////
+  return (
+    <Box>
+      <Typography variant='h2' component='h2'>
+        {props.ssg2.def.hospital}の症例数ランキング・手術件数・在院日数の推移グラフ
+      </Typography>
+      <Box sx={{ maxWidth: '400px' }} paddingBottom={2}>
+        <Select
+          defaultValue={props.graphList[2]}
+          filterOption={false}
+          options={props.graphList}
+          onChange={(e) => {
+            props.setGraph(e);
+          }}
+          isSearchable={false}
+          id='selectbox3'
+          instanceId='selectbox3'
+        />
+      </Box>
+      <ResponsiveContainer height={400}>
+        <LineChart
+          width={600}
+          height={400}
+          data={props.chartData}
+          margin={{
+            top: 5,
+            right: 5,
+            left: -50,
+            bottom: 5,
+          }}
+        >
+          {props.dis_list1.map((v3, i3) => {
+            return (
+              <Line
+                connectNulls
+                type='monotone'
+                dataKey={v3}
+                stroke={palette1[i3 % 100]}
+                dot={{ r: 0 }}
+                key={'l' + i3}
+              />
+            );
+          })}
+          <XAxis dataKey='year' tick={{ fontSize: 12 }} />
+          <YAxis
+            domain={['auto', 'auto']}
+            tickMargin={0}
+            tick={{ fontSize: 12, dx: 43, dy: -7, width: 0 }}
+            orientation='left'
+            tickFormatter={(tick) => {
+              if (tick >= 1000 && tick < 1000000) return Number(tick.toPrecision(3)) / 1000 + 'K';
+              else if (tick >= 1000000 && tick < 1000000000)
+                return Number(tick.toPrecision(3)) / 1000000 + 'M';
+              else if (tick >= 1000000000) return Number(tick.toPrecision(3)) / 1000000000 + 'B';
+              else return tick;
+            }}
+            reversed={props.graph.rev}
+          />
+          <Tooltip content={CustomTooltip2} wrapperStyle={{ zIndex: 1000 }} />
+          <Legend
+            align='left'
+            wrapperStyle={{ paddingLeft: '50px' }}
+            formatter={(value, entry, index) => <span className='text-color-class'>{value}</span>}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </Box>
+  );
+});

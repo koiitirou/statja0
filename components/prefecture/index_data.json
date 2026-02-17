@@ -1,0 +1,437 @@
+{
+  "北海道・東北": [
+    {
+      "td_nm": "01",
+      "td_lt": "北海道",
+      "td_et": "Hokkaido",
+      "td_sq": "s01",
+      "logo_url": "hokkaido_dousho.png",
+      "short_name": "北海道",
+      "region": "北海道・東北"
+    },
+    {
+      "td_nm": "02",
+      "td_lt": "青森県",
+      "td_et": "Aomori",
+      "td_sq": "s02",
+      "logo_url": "aomori_kensho.png",
+      "short_name": "青森",
+      "region": "北海道・東北"
+    },
+    {
+      "td_nm": "03",
+      "td_lt": "岩手県",
+      "td_et": "Iwate",
+      "td_sq": "s03",
+      "logo_url": "iwate_kensho.png",
+      "short_name": "岩手",
+      "region": "北海道・東北"
+    },
+    {
+      "td_nm": "04",
+      "td_lt": "宮城県",
+      "td_et": "Miyagi",
+      "td_sq": "s04",
+      "logo_url": "miyagi_kensho.png",
+      "short_name": "宮城",
+      "region": "北海道・東北"
+    },
+    {
+      "td_nm": "05",
+      "td_lt": "秋田県",
+      "td_et": "Akita",
+      "td_sq": "s05",
+      "logo_url": "akita_kensho.png",
+      "short_name": "秋田",
+      "region": "北海道・東北"
+    },
+    {
+      "td_nm": "06",
+      "td_lt": "山形県",
+      "td_et": "Yamagata",
+      "td_sq": "s06",
+      "logo_url": "yamagata_kensho.png",
+      "short_name": "山形",
+      "region": "北海道・東北"
+    },
+    {
+      "td_nm": "07",
+      "td_lt": "福島県",
+      "td_et": "Fukushima",
+      "td_sq": "s07",
+      "logo_url": "fukushima_kensho.png",
+      "short_name": "福島",
+      "region": "北海道・東北"
+    }
+  ],
+  "関東": [
+    {
+      "td_nm": "08",
+      "td_lt": "茨城県",
+      "td_et": "Ibaraki",
+      "td_sq": "s08",
+      "logo_url": "ibaraki_kensho.png",
+      "short_name": "茨城",
+      "region": "関東"
+    },
+    {
+      "td_nm": "09",
+      "td_lt": "栃木県",
+      "td_et": "Tochigi",
+      "td_sq": "s09",
+      "logo_url": "tochigi_kensho.png",
+      "short_name": "栃木",
+      "region": "関東"
+    },
+    {
+      "td_nm": "10",
+      "td_lt": "群馬県",
+      "td_et": "Gunma",
+      "td_sq": "s10",
+      "logo_url": "gunma_monsho.png",
+      "short_name": "群馬",
+      "region": "関東"
+    },
+    {
+      "td_nm": "11",
+      "td_lt": "埼玉県",
+      "td_et": "Saitama",
+      "td_sq": "s11",
+      "logo_url": "saitama_kensho.png",
+      "short_name": "埼玉",
+      "region": "関東"
+    },
+    {
+      "td_nm": "12",
+      "td_lt": "千葉県",
+      "td_et": "Chiba",
+      "td_sq": "s12",
+      "logo_url": "chiba_kensho.png",
+      "short_name": "千葉",
+      "region": "関東"
+    },
+    {
+      "td_nm": "13",
+      "td_lt": "東京都",
+      "td_et": "Tokyo",
+      "td_sq": "s13",
+      "logo_url": "tokyo_symbol.png",
+      "short_name": "東京",
+      "region": "関東"
+    },
+    {
+      "td_nm": "14",
+      "td_lt": "神奈川県",
+      "td_et": "Kanagawa",
+      "td_sq": "s14",
+      "logo_url": "kanagawa_kensho.png",
+      "short_name": "神奈川",
+      "region": "関東"
+    }
+  ],
+  "中部": [
+    {
+      "td_nm": "15",
+      "td_lt": "新潟県",
+      "td_et": "Niigata",
+      "td_sq": "s15",
+      "logo_url": "niigata_symbol.png",
+      "short_name": "新潟",
+      "region": "中部"
+    },
+    {
+      "td_nm": "16",
+      "td_lt": "富山県",
+      "td_et": "Toyama",
+      "td_sq": "s16",
+      "logo_url": "toyama_kensho.png",
+      "short_name": "富山",
+      "region": "中部"
+    },
+    {
+      "td_nm": "17",
+      "td_lt": "石川県",
+      "td_et": "Ishikawa",
+      "td_sq": "s17",
+      "logo_url": "ishikawa_kenki.png",
+      "short_name": "石川",
+      "region": "中部"
+    },
+    {
+      "td_nm": "18",
+      "td_lt": "福井県",
+      "td_et": "Fukui",
+      "td_sq": "s18",
+      "logo_url": "fukui_kensho.png",
+      "short_name": "福井",
+      "region": "中部"
+    },
+    {
+      "td_nm": "19",
+      "td_lt": "山梨県",
+      "td_et": "Yamanashi",
+      "td_sq": "s19",
+      "logo_url": "yamanashi_kensho.png",
+      "short_name": "山梨",
+      "region": "中部"
+    },
+    {
+      "td_nm": "20",
+      "td_lt": "長野県",
+      "td_et": "Nagano",
+      "td_sq": "s20",
+      "logo_url": "nagano_kensho.png",
+      "short_name": "長野",
+      "region": "中部"
+    },
+    {
+      "td_nm": "21",
+      "td_lt": "岐阜県",
+      "td_et": "Gifu",
+      "td_sq": "s21",
+      "logo_url": "gifu_kensho.png",
+      "short_name": "岐阜",
+      "region": "中部"
+    },
+    {
+      "td_nm": "22",
+      "td_lt": "静岡県",
+      "td_et": "Shizuoka",
+      "td_sq": "s22",
+      "logo_url": "shizuoka_kensho.png",
+      "short_name": "静岡",
+      "region": "中部"
+    },
+    {
+      "td_nm": "23",
+      "td_lt": "愛知県",
+      "td_et": "Aichi",
+      "td_sq": "s23",
+      "logo_url": "aichi_kensho.png",
+      "short_name": "愛知",
+      "region": "中部"
+    }
+  ],
+  "関西": [
+    {
+      "td_nm": "24",
+      "td_lt": "三重県",
+      "td_et": "Mie",
+      "td_sq": "s24",
+      "logo_url": "mie_kensho.png",
+      "short_name": "三重",
+      "region": "関西"
+    },
+    {
+      "td_nm": "25",
+      "td_lt": "滋賀県",
+      "td_et": "Shiga",
+      "td_sq": "s25",
+      "logo_url": "shiga_kensho.png",
+      "short_name": "滋賀",
+      "region": "関西"
+    },
+    {
+      "td_nm": "26",
+      "td_lt": "京都府",
+      "td_et": "Kyoto",
+      "td_sq": "s26",
+      "logo_url": "kyoto_fusho.png",
+      "short_name": "京都",
+      "region": "関西"
+    },
+    {
+      "td_nm": "27",
+      "td_lt": "大阪府",
+      "td_et": "Osaka",
+      "td_sq": "s27",
+      "logo_url": "osaka_fusho.png",
+      "short_name": "大阪",
+      "region": "関西"
+    },
+    {
+      "td_nm": "28",
+      "td_lt": "兵庫県",
+      "td_et": "Hyogo",
+      "td_sq": "s28",
+      "logo_url": "hyogo_kenki.png",
+      "short_name": "兵庫",
+      "region": "関西"
+    },
+    {
+      "td_nm": "29",
+      "td_lt": "奈良県",
+      "td_et": "Nara",
+      "td_sq": "s29",
+      "logo_url": "nara_kensho.png",
+      "short_name": "奈良",
+      "region": "関西"
+    },
+    {
+      "td_nm": "30",
+      "td_lt": "和歌山県",
+      "td_et": "Wakayama",
+      "td_sq": "s30",
+      "logo_url": "wakayama_kensho.png",
+      "short_name": "和歌山",
+      "region": "関西"
+    }
+  ],
+  "中国・四国": [
+    {
+      "td_nm": "31",
+      "td_lt": "鳥取県",
+      "td_et": "Tottori",
+      "td_sq": "s31",
+      "logo_url": "tottori_kensho.png",
+      "short_name": "鳥取",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "32",
+      "td_lt": "島根県",
+      "td_et": "Shimane",
+      "td_sq": "s32",
+      "logo_url": "shimane_kensho.png",
+      "short_name": "島根",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "33",
+      "td_lt": "岡山県",
+      "td_et": "Okayama",
+      "td_sq": "s33",
+      "logo_url": "okayama_kensho.png",
+      "short_name": "岡山",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "34",
+      "td_lt": "広島県",
+      "td_et": "Hiroshima",
+      "td_sq": "s34",
+      "logo_url": "hiroshima_kensho.png",
+      "short_name": "広島",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "35",
+      "td_lt": "山口県",
+      "td_et": "Yamaguchi",
+      "td_sq": "s35",
+      "logo_url": "yamaguchi_kensho.png",
+      "short_name": "山口",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "36",
+      "td_lt": "徳島県",
+      "td_et": "Tokushima",
+      "td_sq": "s36",
+      "logo_url": "tokushima_kensho.png",
+      "short_name": "徳島",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "37",
+      "td_lt": "香川県",
+      "td_et": "Kagawa",
+      "td_sq": "s37",
+      "logo_url": "kagawa_kensho.png",
+      "short_name": "香川",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "38",
+      "td_lt": "愛媛県",
+      "td_et": "Ehime",
+      "td_sq": "s38",
+      "logo_url": "ehime_kenki.png",
+      "short_name": "愛媛",
+      "region": "中国・四国"
+    },
+    {
+      "td_nm": "39",
+      "td_lt": "高知県",
+      "td_et": "Kochi",
+      "td_sq": "s39",
+      "logo_url": "kochi_kensho.png",
+      "short_name": "高知",
+      "region": "中国・四国"
+    }
+  ],
+  "九州・沖縄": [
+    {
+      "td_nm": "40",
+      "td_lt": "福岡県",
+      "td_et": "Fukuoka",
+      "td_sq": "s40",
+      "logo_url": "fukuoka_kensho.png",
+      "short_name": "福岡",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "41",
+      "td_lt": "佐賀県",
+      "td_et": "Saga",
+      "td_sq": "s41",
+      "logo_url": "saga_symbol.png",
+      "short_name": "佐賀",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "42",
+      "td_lt": "長崎県",
+      "td_et": "Nagasaki",
+      "td_sq": "s42",
+      "logo_url": "nagasaki_kensho.png",
+      "short_name": "長崎",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "43",
+      "td_lt": "熊本県",
+      "td_et": "Kumamoto",
+      "td_sq": "s43",
+      "logo_url": "kumamoto_kensho.png",
+      "short_name": "熊本",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "44",
+      "td_lt": "大分県",
+      "td_et": "Oita",
+      "td_sq": "s44",
+      "logo_url": "oita_kisho.png",
+      "short_name": "大分",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "45",
+      "td_lt": "宮崎県",
+      "td_et": "Miyazaki",
+      "td_sq": "s45",
+      "logo_url": "miyazaki_kensho.png",
+      "short_name": "宮崎",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "46",
+      "td_lt": "鹿児島県",
+      "td_et": "Kagoshima",
+      "td_sq": "s46",
+      "logo_url": "kagoshima_symbol.png",
+      "short_name": "鹿児島",
+      "region": "九州・沖縄"
+    },
+    {
+      "td_nm": "47",
+      "td_lt": "沖縄県",
+      "td_et": "Okinawa",
+      "td_sq": "s47",
+      "logo_url": "okinawa_kensho.png",
+      "short_name": "沖縄",
+      "region": "九州・沖縄"
+    }
+  ]
+}

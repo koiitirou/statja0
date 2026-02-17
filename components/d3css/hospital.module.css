@@ -1,0 +1,38 @@
+.g0,
+.gh0 {
+  text-align: right;
+  font-size: 12px;
+  padding-right: 4px;
+}
+@media (min-width: 900px) {
+  .g0,
+  .gh0 {
+    font-size: 14px;
+    padding-right: 14px;
+  }
+}
+
+.g1,
+.gh1 {
+  text-align: left;
+}
+.con1 {
+  min-width: 500px;
+}
+
+.g4 {
+  font-weight: bold;
+}
+
+.gg1 {
+  background-color: #f2f2f2;
+}
+.ghh0 {
+  text-align: center;
+}
+.r1 {
+  border-right: solid 0.5px lightgrey;
+}
+.link {
+  text-decoration: none;
+}

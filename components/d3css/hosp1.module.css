@@ -1,0 +1,11 @@
+.table3 th:nth-child(1) {
+  width: 40%;
+  min-width: 200px;
+}
+
+.table3 td:nth-child(1) {
+  text-align: left !important;
+}
+.table3 td:nth-child(2) {
+  font-weight: bold;
+}

@@ -1,0 +1,351 @@
+[
+  {
+    "params": {
+      "bed": "bed",
+      "mdc": "bed",
+      "mdn": "病床数",
+      "columns": [
+        {
+          "Header": "順位",
+          "accessor": "bnk"
+        },
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "病床数(ベッド数)",
+          "columns": [
+            {
+              "Header": "総病床",
+              "accessor": "bll"
+            },
+            {
+              "Header": "DPC病床",
+              "accessor": "dpb"
+            },
+            {
+              "Header": "リハビリ",
+              "accessor": "bre"
+            },
+            {
+              "Header": "地域包括",
+              "accessor": "bti"
+            },
+            {
+              "Header": "精神科",
+              "accessor": "bps"
+            },
+            {
+              "Header": "療養",
+              "accessor": "bry"
+            },
+            {
+              "Header": "結核",
+              "accessor": "bke"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "ambulance",
+      "mdc": "ambulance",
+      "mdn": "救急車搬送による入院数",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "救急車搬送による入院",
+          "columns": [
+            {
+              "Header": "月平均数",
+              "accessor": "amn"
+            },
+            {
+              "Header": "割合",
+              "accessor": "amr"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "emergent",
+      "mdc": "emergent",
+      "mdn": "予定外・救急入院数",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "予定外入院",
+          "columns": [
+            {
+              "Header": "月平均数",
+              "accessor": "e1n"
+            },
+            {
+              "Header": "割合",
+              "accessor": "e1r"
+            }
+          ]
+        },
+        {
+          "Header": "救急医療入院",
+          "columns": [
+            {
+              "Header": "月平均数",
+              "accessor": "e2n"
+            },
+            {
+              "Header": "割合",
+              "accessor": "e2r"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "outcome",
+      "mdc": "outcome",
+      "mdn": "退院時転帰",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "退院時転帰",
+          "columns": [
+            {
+              "Header": "治癒・軽快",
+              "accessor": "o01"
+            },
+            {
+              "Header": "寛解",
+              "accessor": "o02"
+            },
+            {
+              "Header": "不変",
+              "accessor": "o03"
+            },
+            {
+              "Header": "増悪",
+              "accessor": "o04"
+            },
+            {
+              "Header": "医療資源病名による死亡",
+              "accessor": "o05"
+            },
+            {
+              "Header": "医療資源病名以外の死亡",
+              "accessor": "o06"
+            },
+            {
+              "Header": "その他",
+              "accessor": "o07"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "readmission",
+      "mdc": "readmission",
+      "mdn": "再入院の状況",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "再入院率",
+          "columns": [
+            {
+              "Header": "全て",
+              "accessor": "r01"
+            },
+            {
+              "Header": "同一疾患・4週以内",
+              "accessor": "r02"
+            },
+            {
+              "Header": "同一疾患・4週超",
+              "accessor": "r03"
+            },
+            {
+              "Header": "別疾患・4週以内",
+              "accessor": "r04"
+            },
+            {
+              "Header": "別疾患・4週超",
+              "accessor": "r05"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "referrel",
+      "mdc": "referrel",
+      "mdn": "他院よりの紹介入院数",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "他院よりの紹介による入院",
+          "columns": [
+            {
+              "Header": "月平均数",
+              "accessor": "rfn"
+            },
+            {
+              "Header": "割合",
+              "accessor": "rfr"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "route",
+      "mdc": "route",
+      "mdn": "入院経路",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "入院経路の割合",
+          "columns": [
+            {
+              "Header": "家庭",
+              "accessor": "h01"
+            },
+            {
+              "Header": "転院",
+              "accessor": "h02"
+            },
+            {
+              "Header": "介護・福祉施設",
+              "accessor": "h03"
+            },
+            {
+              "Header": "院内出生",
+              "accessor": "h04"
+            },
+            {
+              "Header": "その他",
+              "accessor": "h05"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "bed": "discharge",
+      "mdc": "discharge",
+      "mdn": "退院先",
+      "columns": [
+        {
+          "Header": "都道府県",
+          "accessor": "shn"
+        },
+        {
+          "Header": "病院名",
+          "accessor": "hs2"
+        },
+        {
+          "Header": "退院先の割合",
+          "columns": [
+            {
+              "Header": "家庭・当院通院",
+              "accessor": "d01"
+            },
+            {
+              "Header": "家庭・他院通院",
+              "accessor": "d02"
+            },
+            {
+              "Header": "家庭・その他",
+              "accessor": "d03"
+            },
+            {
+              "Header": "転院",
+              "accessor": "d04"
+            },
+            {
+              "Header": "介護老人保健施設",
+              "accessor": "d05"
+            },
+            {
+              "Header": "介護老人福祉施設",
+              "accessor": "d06"
+            },
+            {
+              "Header": "有料老人ホーム等",
+              "accessor": "d07"
+            },
+            {
+              "Header": "死亡・終了",
+              "accessor": "d08"
+            },
+            {
+              "Header": "その他",
+              "accessor": "d09"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

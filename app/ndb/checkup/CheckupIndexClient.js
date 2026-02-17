@@ -1,4 +1,5 @@
 'use client';
+import { Layout } from '@/components/layout';
 import { Box, Typography, Chip } from '@mui/material';
 import Slider from '@mui/material/Slider';
 import theme from '@/theme';
@@ -16,6 +17,7 @@ export default function CheckupIndexClient({ checkup_path, summary_mean }) {
   const title1 = '特定健診データの平均値';
   const description1 = '特定健診データの平均値の推移を性別・年齢別・都道府県別にまとめました。';
   return (
+    <Layout>
     <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
       <Typography variant='h1'>{title1}</Typography>
       <Typography variant='body1'>{description1}</Typography>
@@ -40,6 +42,7 @@ export default function CheckupIndexClient({ checkup_path, summary_mean }) {
       </Box>
       {sum1.map((v0, i0) => (<Fragment key={'a' + i0}><Table1 v0={v0} /></Fragment>))}
     </Box>
+    </Layout>
   );
 }
 

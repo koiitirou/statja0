@@ -1,4 +1,5 @@
 'use client';
+import { Layout } from '@/components/layout';
 import { Box } from '@mui/material';
 import dynamic from 'next/dynamic';
 import theme from '@/theme';
@@ -10,8 +11,11 @@ const Checkup = dynamic(
 
 export default function CheckupCidClient({ cid, ssg1, ssg2 }) {
   return (
-    <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
-      <Checkup ssg1={ssg1} ssg2={ssg2} />
-    </Box>
+    <Layout>
+      <Box sx={{ paddingTop: { xs: '10px', md: '10px' } }} maxWidth={theme.maxWidth}>
+        <Checkup ssg1={ssg1} ssg2={ssg2} />
+      </Box>
+    </Layout>
   );
 }
+

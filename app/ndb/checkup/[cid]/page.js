@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { cid } = await params;
   try {
-    const res1 = await fetch(`${server}/checkup/${cid}_mean.json`, { next: { revalidate: false } });
+    const res1 = await fetch(`${server}/ph2/${cid}_mean.json`, { next: { revalidate: false } });
     if (!res1.ok) return { title: `特定健診データ ${cid}` };
     const ssg1 = await res1.json();
     return {
@@ -29,8 +29,8 @@ export default async function CheckupCidPage({ params }) {
   let ssg1, ssg2;
   try {
     const [res1, res2] = await Promise.all([
-      fetch(`${server}/checkup/${cid}_mean.json`, { next: { revalidate: false } }),
-      fetch(`${server}/checkup/${cid}_breakdown.json`, { next: { revalidate: false } }),
+      fetch(`${server}/ph2/${cid}_mean.json`, { next: { revalidate: false } }),
+      fetch(`${server}/kub/${cid}_kubun.json`, { next: { revalidate: false } }),
     ]);
     ssg1 = await res1.json();
     ssg2 = await res2.json();

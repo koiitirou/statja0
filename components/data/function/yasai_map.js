@@ -4,7 +4,8 @@ import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps
 import { scaleQuantize } from 'd3-scale';
 //import { tsv, json } from 'd3-fetch';
 import { Box, Typography, Stack } from '@mui/material';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 import Slider from '@mui/material/Slider';
 import Chip from '@mui/material/Chip';
 const color1 = [
@@ -264,7 +265,7 @@ const MapChart = (props) => {
             </div>
           </Box>
           <ComposableMap
-            data-tip=''
+            data-tooltip-id='yasai-map-tooltip'
             projectionConfig={{ scale: 2000, center: [13, 6.25] }}
             /*      width={400}*/
             height={500}
@@ -330,7 +331,7 @@ const MapChart = (props) => {
               }}
             >
               {isMounted && (
-                <ReactTooltip effect='float' type='light'>
+                <ReactTooltip id='yasai-map-tooltip' float={true} variant='light'>
                   {content}
                 </ReactTooltip>
               )}

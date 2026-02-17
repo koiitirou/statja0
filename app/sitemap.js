@@ -36,8 +36,11 @@ export default function sitemap() {
   const path1 = readJson('public/comp/data/link/path1.json');
   path1.forEach((s) => urls.push(entry(`/ndb/${s.params.eid}`)));
 
-  // /ndb/prescription/[id2] - path array has all 18,902 individual prescription entries
+  // /ndb/[eid] - epath has 2,953 category-level NDB prescription pages
   const sum_presc = readJson('components/path_ndb/sum_prescription_path.json');
+  sum_presc.epath.forEach((s) => urls.push(entry(`/ndb/${s.params.eid}`)));
+
+  // /ndb/prescription/[id2] - path array has all 18,902 individual prescription entries
   sum_presc.path.forEach((s) => urls.push(entry(`/ndb/prescription/${s.params.id2}`)));
 
   // /ndb/checkup/[cid]
@@ -64,8 +67,18 @@ export default function sitemap() {
   // /prefecture/category/[id] - use the flat path array
   pr2.path.forEach((s) => urls.push(entry(`/prefecture/category/${s.params.id}`)));
 
-  // /prefecture/vegetable/[yasai]
+  // /prefecture/info/[...prefec] - 47 prefectures × (14 pr2 + 2 yasai) lnk values
+  const ref2 = readJson('components/prefecture_list2.json');
   const yasai = readJson('components/pr2_path/yasai_path.json');
+  const allLnks = Object.values(pr2.refs).map((v) => v.params.lnk);
+  if (yasai.refs) Object.values(yasai.refs).forEach((v) => allLnks.push(v.params.lnk));
+  Object.keys(ref2).forEach((prefCode) => {
+    if (prefCode !== 's00') {
+      allLnks.forEach((lnk) => urls.push(entry(`/prefecture/info/${prefCode}/${lnk}`)));
+    }
+  });
+
+  // /prefecture/vegetable/[yasai]
   yasai.path.forEach((s) => urls.push(entry(`/prefecture/vegetable/${s.params.yasai}`)));
 
   // /city/category/[city]

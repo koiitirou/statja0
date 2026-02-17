@@ -72,11 +72,15 @@ const Pyramid2 = (props) => {
         <Box className={classes.retable}>
           <table {...getTableProps()} className={[classes.table1].join(' ')}>
             <thead>
-              {headerGroups.map((headerGroup, i1) => (
-                <tr {...headerGroup.getHeaderGroupProps()} key={'s' + i1}>
+              {headerGroups.map((headerGroup, i1) => {
+                const { key: hgKey, ...hgProps } = headerGroup.getHeaderGroupProps();
+                return (
+                <tr key={'s' + i1} {...hgProps}>
                   {headerGroup.headers.map((column, i2) => {
+                    const { key: _k1, ...sortProps } = column.getHeaderProps(column.getSortByToggleProps());
+                    const { key: _k2, ...colProps } = column.getHeaderProps();
                     return (
-                      <th key={'t' + i2} {...column.getHeaderProps(column.getSortByToggleProps())} {...column.getHeaderProps()}
+                      <th key={'t' + i2} {...sortProps} {...colProps}
                         className={column.Header == '男性' ? classes.male : (i2 >= 1) & (i2 <= ageLength) ? classes.female : i2 == 0 ? '' : classes.male}>
                         {column.render('Header')}
                         <span>{column.isSorted && !column.disableSortBy ? column.isSortedDesc ? ' 🔽' : ' 🔼' : ''}</span>
@@ -84,20 +88,23 @@ const Pyramid2 = (props) => {
                     );
                   })}
                 </tr>
-              ))}
+                );
+              })}
               <tr><th colSpan={visibleColumns.length} style={{ textAlign: 'left' }}></th></tr>
             </thead>
             <tbody {...getTableBodyProps()}>
               {rows.map((row, index2) => {
                 prepareRow(row);
+                const { key: rKey, ...rowProps } = row.getRowProps();
                 return (
-                  <tr {...row.getRowProps()} key={'u' + index2}>
+                  <tr key={'u' + index2} {...rowProps}>
                     {row.cells.map((cell, i3) => {
+                      const { key: cKey, ...cellProps } = cell.getCellProps();
                       return (
                         <td key={'v' + i3}
                           style={i3 >= ageLength + 1 ? { color: colorScale2m(Number(cell.value)), backgroundColor: colorScale1m(Number(cell.value)) }
                             : i3 >= 1 ? { color: colorScale2f(Number(cell.value)), backgroundColor: colorScale1f(Number(cell.value)) } : {}}
-                          {...cell.getCellProps()}>
+                          {...cellProps}>
                           {i3 == 0 ? (<span>{ref1[cell.value].tln}</span>) : (<span>{cell.value}</span>)}
                         </td>
                       );

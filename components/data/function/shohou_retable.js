@@ -450,13 +450,18 @@ const App = (props) => {
           className={[classes.table1, classes.shohou1, classes.ind].join(' ')}
         >
           <thead>
-            {headerGroups.map((headerGroup, index1) => (
-              <tr {...headerGroup.getHeaderGroupProps()} key={'s' + index1}>
-                {headerGroup.headers.map((column, index12) => (
+            {headerGroups.map((headerGroup, index1) => {
+              const { key: hgKey, ...hgProps } = headerGroup.getHeaderGroupProps();
+              return (
+              <tr key={'s' + index1} {...hgProps}>
+                {headerGroup.headers.map((column, index12) => {
+                  const { key: _k1, ...sortProps } = column.getHeaderProps(column.getSortByToggleProps());
+                  const { key: _k2, ...colProps } = column.getHeaderProps();
+                  return (
                   <th
                     key={'t' + index12}
-                    {...column.getHeaderProps(column.getSortByToggleProps())}
-                    {...column.getHeaderProps()}
+                    {...sortProps}
+                    {...colProps}
                   >
                     {column.render('Header')}
                     <span>
@@ -468,9 +473,11 @@ const App = (props) => {
                     </span>
                     <div>{column.Header == '一般名' ? column.render('Filter') : null}</div>
                   </th>
-                ))}
+                  );
+                })}
               </tr>
-            ))}
+              );
+            })}
             <tr>
               <th
                 colSpan={visibleColumns.length}
@@ -489,11 +496,13 @@ const App = (props) => {
           <tbody {...getTableBodyProps()} className={classes.tb}>
             {rows.map((row, index2) => {
               prepareRow(row);
+              const { key: rKey, ...rowProps } = row.getRowProps();
               return (
-                <tr {...row.getRowProps()} key={'u' + index2}>
+                <tr key={'u' + index2} {...rowProps}>
                   {row.cells.map((cell, index3) => {
+                    const { key: cKey, ...cellProps } = cell.getCellProps();
                     return (
-                      <td key={'v' + index3} {...cell.getCellProps()}>
+                      <td key={'v' + index3} {...cellProps}>
                         {index3 == 0 && cell.render('Cell')}
                         {index3 == 1 && cell.render('Cell')}
                         {index3 == 2 && (

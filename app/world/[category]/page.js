@@ -1,4 +1,5 @@
 import { server } from '@/components/config';
+import { notFound } from 'next/navigation';
 import wor_path from '@/components/wor/wor_path.json';
 import WorldCategoryClient from './WorldCategoryClient';
 
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }) {
   const { category } = await params;
   try {
     const res = await fetch(`${server}/wo2/${category}_ssg.json`);
+    if (!res.ok) return { title: '世界ランキング' };
     const ssg1 = await res.json();
     const title1 = `${ssg1.def.idj}の世界ランキング${ssg1.def.tmn}〜${ssg1.def.tmx}年【国別順位】`;
     const unit1 = ssg1.def.utm;
@@ -38,6 +40,7 @@ export async function generateMetadata({ params }) {
 export default async function WorldCategoryPage({ params }) {
   const { category } = await params;
   const res = await fetch(`${server}/wo2/${category}_ssg.json`);
+  if (!res.ok) notFound();
   const ssg1 = await res.json();
 
   const tml = Array.isArray(ssg1.def.tml) ? ssg1.def.tml : [ssg1.def.tml];

@@ -49,20 +49,20 @@ const App = () => {
   const pathname = usePathname();
   const [input, setInput] = useState('');
   const [inputSave, setSave] = useState('');
-  const [query0, setQuery0] = useState();
+  const [query0, setQuery0] = useState('');
 
   useEffect(() => {
-    const i = searchParams.get('i');
+    const i = searchParams.get('i') || '';
     setSave(i);
     setQuery0(i);
   }, [searchParams]);
 
   const [inpu2, setInpu2] = useState('');
   const [inputSav2, setSav2] = useState('');
-  const [query2, setQuery2] = useState();
+  const [query2, setQuery2] = useState('');
 
   useEffect(() => {
-    const i2 = searchParams.get('i2');
+    const i2 = searchParams.get('i2') || '';
     setSav2(i2);
     setQuery2(i2);
   }, [searchParams]);

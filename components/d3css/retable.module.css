@@ -1,0 +1,134 @@
+.retable td {
+  padding: 5px 2px;
+  font-size: 12px;
+  text-align: right;
+}
+.retable .table1 td:nth-child(4) {
+  text-align: left;
+  min-width: 150px;
+}
+.retable .table1 td:nth-child(2) {
+  padding-right: 10px;
+  min-width: 40px;
+}
+
+.retable .table1 td:nth-child(3) {
+  min-width: 55px;
+  text-align: center;
+}
+
+.retable th {
+  color: black;
+  padding: 7px 2px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.retable .table2 th {
+  text-align: center;
+}
+.retable .table2 td {
+  text-align: right;
+}
+.retable .table2 td:nth-child(1) {
+  text-align: left;
+}
+
+.retable tbody tr:nth-of-type(even),
+tbody .tr1:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+.retable .tr1:nth-last-of-type(1) {
+  font-weight: bold;
+}
+
+.retable select {
+  font-size: 12px;
+}
+@media (min-width: 900px) {
+  .retable td,
+  .retable th,
+  .retable .filter,
+  .retable select,
+  .retable .clegend1 span {
+    font-size: 14px;
+  }
+  .retable .table6.info1 td:nth-child(1) {
+    width: 180px;
+  }
+}
+.retable td a {
+  text-decoration: none;
+}
+
+.retable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.retable th span input {
+  font-size: 16px;
+}
+.retable .table2 th:nth-child(1) {
+  width: 50%;
+}
+.retable .table2 th:nth-child(2),
+.retable .table2 th:nth-child(3) {
+  width: 25%;
+}
+.retable .filter {
+  border: 0;
+  padding-left: 5px;
+}
+
+.retable .table3 td:nth-child(1) {
+  text-align: left;
+  padding-left: 10px;
+}
+.retable .table3 td:nth-child(2),
+.retable .table7 td:nth-child(2),
+.retable .table7 td:nth-child(3),
+.retable .table5 td:nth-child(1),
+.retable .table5 td:nth-child(2),
+.retable .table6 td:nth-child(1) {
+  text-align: left;
+}
+.retable .table3 th:nth-child(2) {
+  min-width: 150px;
+}
+.retable .table4 td:nth-child(3) {
+  font-weight: bold;
+}
+.retable .table6 td:nth-child(2) {
+  text-align: right;
+}
+.retable .table1 td:nth-child(3) {
+  text-align: center !important;
+}
+.retable .table1.dpc1 td:nth-child(4) {
+  text-align: left;
+}
+.retable .table6.info1 td:nth-child(1) {
+  min-width: 100px;
+}
+
+.retable .table4.hospital1 td:nth-child(3) {
+  font-weight: normal;
+  min-width: 150px;
+  text-align: left;
+}
+
+.retable .table4.hospital1 td:nth-child(2) {
+  width: 50px;
+  width: 10%;
+}
+
+.tiptable tbody {
+  -webkit-text-stroke: 0.1px #000;
+}
+.tiptable td:nth-child(1) {
+  text-align: left;
+}
+.tiptable td:nth-child(2) {
+  text-align: right;
+}

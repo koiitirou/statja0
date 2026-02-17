@@ -1,0 +1,3161 @@
+[
+  {
+    "params": {
+      "id": "352",
+      "name": "Iceland",
+      "iso3": "ISL",
+      "iso2": "IS",
+      "jpni": "アイスランド",
+      "logo": "is",
+      "kata": "アイスランド",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "372",
+      "name": "Ireland",
+      "iso3": "IRL",
+      "iso2": "IE",
+      "jpni": "アイルランド",
+      "logo": "ie",
+      "kata": "アイルランド",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "935",
+      "name": "Asia",
+      "iso3": "ASI",
+      "iso2": "AA",
+      "jpni": "アジア",
+      "logo": "z1",
+      "kata": "アジア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "31",
+      "name": "Azerbaijan",
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "jpni": "アゼルバイジャン",
+      "logo": "az",
+      "kata": "アゼルバイジャン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "4",
+      "name": "Afghanistan",
+      "iso3": "AFG",
+      "iso2": "AF",
+      "jpni": "アフガニスタン",
+      "logo": "af",
+      "kata": "アフガニスタン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "903",
+      "name": "Africa",
+      "iso3": "AFR",
+      "iso2": "A9",
+      "jpni": "アフリカ",
+      "logo": "z1",
+      "kata": "アフリカ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "840",
+      "name": "United States of America",
+      "iso3": "USA",
+      "iso2": "US",
+      "jpni": "アメリカ合衆国",
+      "logo": "us",
+      "kata": "アメリカ合衆国",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "850",
+      "name": "United States Virgin Islands",
+      "iso3": "VIR",
+      "iso2": "VI",
+      "jpni": "アメリカ領ヴァージン諸島",
+      "logo": "vi",
+      "kata": "アメリカ領ヴァージン諸島",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "16",
+      "name": "American Samoa",
+      "iso3": "ASM",
+      "iso2": "AS",
+      "jpni": "アメリカ領サモア",
+      "logo": "as",
+      "kata": "アメリカ領サモア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "784",
+      "name": "United Arab Emirates",
+      "iso3": "ARE",
+      "iso2": "AE",
+      "jpni": "アラブ首長国連邦",
+      "logo": "ae",
+      "kata": "アラブ首長国連邦",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "12",
+      "name": "Algeria",
+      "iso3": "DZA",
+      "iso2": "DZ",
+      "jpni": "アルジェリア",
+      "logo": "dz",
+      "kata": "アルジェリア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "32",
+      "name": "Argentina",
+      "iso3": "ARG",
+      "iso2": "AR",
+      "jpni": "アルゼンチン",
+      "logo": "ar",
+      "kata": "アルゼンチン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "533",
+      "name": "Aruba",
+      "iso3": "ABW",
+      "iso2": "AW",
+      "jpni": "アルバ",
+      "logo": "aw",
+      "kata": "アルバ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "8",
+      "name": "Albania",
+      "iso3": "ALB",
+      "iso2": "AL",
+      "jpni": "アルバニア",
+      "logo": "al",
+      "kata": "アルバニア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "51",
+      "name": "Armenia",
+      "iso3": "ARM",
+      "iso2": "AM",
+      "jpni": "アルメニア",
+      "logo": "am",
+      "kata": "アルメニア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "660",
+      "name": "Anguilla",
+      "iso3": "AIA",
+      "iso2": "AI",
+      "jpni": "アンギラ",
+      "logo": "ai",
+      "kata": "アンギラ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "24",
+      "name": "Angola",
+      "iso3": "AGO",
+      "iso2": "AO",
+      "jpni": "アンゴラ",
+      "logo": "ao",
+      "kata": "アンゴラ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "28",
+      "name": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "iso2": "AG",
+      "jpni": "アンティグア・バーブーダ",
+      "logo": "ag",
+      "kata": "アンティグア・バーブーダ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "20",
+      "name": "Andorra",
+      "iso3": "AND",
+      "iso2": "AD",
+      "jpni": "アンドラ",
+      "logo": "ad",
+      "kata": "アンドラ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "887",
+      "name": "Yemen",
+      "iso3": "YEM",
+      "iso2": "YE",
+      "jpni": "イエメン",
+      "logo": "ye",
+      "kata": "イエメン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "826",
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "iso2": "GB",
+      "jpni": "イギリス",
+      "logo": "gb",
+      "kata": "イギリス",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "92",
+      "name": "British Virgin Islands",
+      "iso3": "VGB",
+      "iso2": "VG",
+      "jpni": "イギリス領ヴァージン諸島",
+      "logo": "vg",
+      "kata": "イギリス領ヴァージン諸島",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "376",
+      "name": "Israel",
+      "iso3": "ISR",
+      "iso2": "IL",
+      "jpni": "イスラエル",
+      "logo": "il",
+      "kata": "イスラエル",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "380",
+      "name": "Italy",
+      "iso3": "ITA",
+      "iso2": "IT",
+      "jpni": "イタリア",
+      "logo": "it",
+      "kata": "イタリア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "368",
+      "name": "Iraq",
+      "iso3": "IRQ",
+      "iso2": "IQ",
+      "jpni": "イラク",
+      "logo": "iq",
+      "kata": "イラク",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "364",
+      "name": "Iran (Islamic Republic of)",
+      "iso3": "IRN",
+      "iso2": "IR",
+      "jpni": "イラン",
+      "logo": "ir",
+      "kata": "イラン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "356",
+      "name": "India",
+      "iso3": "IND",
+      "iso2": "IN",
+      "jpni": "インド",
+      "logo": "in",
+      "kata": "インド",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "360",
+      "name": "Indonesia",
+      "iso3": "IDN",
+      "iso2": "ID",
+      "jpni": "インドネシア",
+      "logo": "id",
+      "kata": "インドネシア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "800",
+      "name": "Uganda",
+      "iso3": "UGA",
+      "iso2": "UG",
+      "jpni": "ウガンダ",
+      "logo": "ug",
+      "kata": "ウガンダ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "804",
+      "name": "Ukraine",
+      "iso3": "UKR",
+      "iso2": "UA",
+      "jpni": "ウクライナ",
+      "logo": "ua",
+      "kata": "ウクライナ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "860",
+      "name": "Uzbekistan",
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "jpni": "ウズベキスタン",
+      "logo": "uz",
+      "kata": "ウズベキスタン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "858",
+      "name": "Uruguay",
+      "iso3": "URY",
+      "iso2": "UY",
+      "jpni": "ウルグアイ",
+      "logo": "uy",
+      "kata": "ウルグアイ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "535",
+      "name": "Bonaire, Sint Eustatius and Saba",
+      "iso3": "BES",
+      "iso2": "BQ",
+      "jpni": "英領南極地域",
+      "logo": "bq",
+      "kata": "エイリョウナンキョクチイキ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "218",
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "iso2": "EC",
+      "jpni": "エクアドル",
+      "logo": "ec",
+      "kata": "エクアドル",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "818",
+      "name": "Egypt",
+      "iso3": "EGY",
+      "iso2": "EG",
+      "jpni": "エジプト",
+      "logo": "eg",
+      "kata": "エジプト",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "233",
+      "name": "Estonia",
+      "iso3": "EST",
+      "iso2": "EE",
+      "jpni": "エストニア",
+      "logo": "ee",
+      "kata": "エストニア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "231",
+      "name": "Ethiopia",
+      "iso3": "ETH",
+      "iso2": "ET",
+      "jpni": "エチオピア",
+      "logo": "et",
+      "kata": "エチオピア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "232",
+      "name": "Eritrea",
+      "iso3": "ERI",
+      "iso2": "ER",
+      "jpni": "エリトリア",
+      "logo": "er",
+      "kata": "エリトリア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "222",
+      "name": "El Salvador",
+      "iso3": "SLV",
+      "iso2": "SV",
+      "jpni": "エルサルバドル",
+      "logo": "sv",
+      "kata": "エルサルバドル",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "36",
+      "name": "Australia",
+      "iso3": "AUS",
+      "iso2": "AU",
+      "jpni": "オーストラリア",
+      "logo": "au",
+      "kata": "オーストラリア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "40",
+      "name": "Austria",
+      "iso3": "AUT",
+      "iso2": "AT",
+      "jpni": "オーストリア",
+      "logo": "at",
+      "kata": "オーストリア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "909",
+      "name": "Oceania",
+      "iso3": "OCE",
+      "iso2": "OA",
+      "jpni": "オセアニア",
+      "logo": "z1",
+      "kata": "オセアニア",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "512",
+      "name": "Oman",
+      "iso3": "OMN",
+      "iso2": "OM",
+      "jpni": "オマーン",
+      "logo": "om",
+      "kata": "オマーン",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "528",
+      "name": "Netherlands",
+      "iso3": "NLD",
+      "iso2": "NL",
+      "jpni": "オランダ",
+      "logo": "nl",
+      "kata": "オランダ",
+      "akas": "ア",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "288",
+      "name": "Ghana",
+      "iso3": "GHA",
+      "iso2": "GH",
+      "jpni": "ガーナ",
+      "logo": "gh",
+      "kata": "ガーナ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "132",
+      "name": "Cabo Verde",
+      "iso3": "CPV",
+      "iso2": "CV",
+      "jpni": "カーボベルデ",
+      "logo": "cv",
+      "kata": "カーボベルデ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "831",
+      "name": "Guernsey",
+      "iso3": "GGY",
+      "iso2": "GG",
+      "jpni": "ガーンジー島",
+      "logo": "gg",
+      "kata": "ガーンジー島",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "328",
+      "name": "Guyana",
+      "iso3": "GUY",
+      "iso2": "GY",
+      "jpni": "ガイアナ",
+      "logo": "gy",
+      "kata": "ガイアナ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "398",
+      "name": "Kazakhstan",
+      "iso3": "KAZ",
+      "iso2": "KZ",
+      "jpni": "カザフスタン",
+      "logo": "kz",
+      "kata": "カザフスタン",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "634",
+      "name": "Qatar",
+      "iso3": "QAT",
+      "iso2": "QA",
+      "jpni": "カタール",
+      "logo": "qa",
+      "kata": "カタール",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "124",
+      "name": "Canada",
+      "iso3": "CAN",
+      "iso2": "CA",
+      "jpni": "カナダ",
+      "logo": "ca",
+      "kata": "カナダ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "266",
+      "name": "Gabon",
+      "iso3": "GAB",
+      "iso2": "GA",
+      "jpni": "ガボン",
+      "logo": "ga",
+      "kata": "ガボン",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "120",
+      "name": "Cameroon",
+      "iso3": "CMR",
+      "iso2": "CM",
+      "jpni": "カメルーン",
+      "logo": "cm",
+      "kata": "カメルーン",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "270",
+      "name": "Gambia",
+      "iso3": "GMB",
+      "iso2": "GM",
+      "jpni": "ガンビア",
+      "logo": "gm",
+      "kata": "ガンビア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "116",
+      "name": "Cambodia",
+      "iso3": "KHM",
+      "iso2": "KH",
+      "jpni": "カンボジア",
+      "logo": "kh",
+      "kata": "カンボジア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "905",
+      "name": "Northern America",
+      "iso3": "NAC",
+      "iso2": "XU",
+      "jpni": "北アメリカ",
+      "logo": "z1",
+      "kata": "キタアメリカ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "580",
+      "name": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "iso2": "MP",
+      "jpni": "北マリアナ諸島",
+      "logo": "mp",
+      "kata": "キタマリアナショトウ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "324",
+      "name": "Guinea",
+      "iso3": "GIN",
+      "iso2": "GN",
+      "jpni": "ギニア",
+      "logo": "gn",
+      "kata": "ギニア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "624",
+      "name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "iso2": "GW",
+      "jpni": "ギニアビサウ",
+      "logo": "gw",
+      "kata": "ギニアビサウ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "196",
+      "name": "Cyprus",
+      "iso3": "CYP",
+      "iso2": "CY",
+      "jpni": "キプロス",
+      "logo": "cy",
+      "kata": "キプロス",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "192",
+      "name": "Cuba",
+      "iso3": "CUB",
+      "iso2": "CU",
+      "jpni": "キューバ",
+      "logo": "cu",
+      "kata": "キューバ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "531",
+      "name": "Curaçao",
+      "iso3": "CUW",
+      "iso2": "CW",
+      "jpni": "キュラソー島",
+      "logo": "cw",
+      "kata": "キュラソー島",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "300",
+      "name": "Greece",
+      "iso3": "GRC",
+      "iso2": "GR",
+      "jpni": "ギリシャ",
+      "logo": "gr",
+      "kata": "ギリシャ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "296",
+      "name": "Kiribati",
+      "iso3": "KIR",
+      "iso2": "KI",
+      "jpni": "キリバス",
+      "logo": "ki",
+      "kata": "キリバス",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "417",
+      "name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "jpni": "キルギス",
+      "logo": "kg",
+      "kata": "キルギス",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "320",
+      "name": "Guatemala",
+      "iso3": "GTM",
+      "iso2": "GT",
+      "jpni": "グアテマラ",
+      "logo": "gt",
+      "kata": "グアテマラ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "312",
+      "name": "Guadeloupe",
+      "iso3": "GLP",
+      "iso2": "GP",
+      "jpni": "グアドループ島",
+      "logo": "gp",
+      "kata": "グアドループ島",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "316",
+      "name": "Guam",
+      "iso3": "GUM",
+      "iso2": "GU",
+      "jpni": "グアム",
+      "logo": "gu",
+      "kata": "グアム",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "414",
+      "name": "Kuwait",
+      "iso3": "KWT",
+      "iso2": "KW",
+      "jpni": "クウェート",
+      "logo": "kw",
+      "kata": "クウェート",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "184",
+      "name": "Cook Islands",
+      "iso3": "COK",
+      "iso2": "CK",
+      "jpni": "クック諸島",
+      "logo": "ck",
+      "kata": "クック諸島",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "304",
+      "name": "Greenland",
+      "iso3": "GRL",
+      "iso2": "GL",
+      "jpni": "グリーンランド",
+      "logo": "gl",
+      "kata": "グリーンランド",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "268",
+      "name": "Georgia",
+      "iso3": "GEO",
+      "iso2": "GE",
+      "jpni": "グルジア",
+      "logo": "ge",
+      "kata": "グルジア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "308",
+      "name": "Grenada",
+      "iso3": "GRD",
+      "iso2": "GD",
+      "jpni": "グレナダ",
+      "logo": "gd",
+      "kata": "グレナダ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "191",
+      "name": "Croatia",
+      "iso3": "HRV",
+      "iso2": "HR",
+      "jpni": "クロアチア",
+      "logo": "hr",
+      "kata": "クロアチア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "136",
+      "name": "Cayman Islands",
+      "iso3": "CYM",
+      "iso2": "KY",
+      "jpni": "ケイマン諸島",
+      "logo": "ky",
+      "kata": "ケイマン諸島",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "404",
+      "name": "Kenya",
+      "iso3": "KEN",
+      "iso2": "KE",
+      "jpni": "ケニア",
+      "logo": "ke",
+      "kata": "ケニア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "384",
+      "name": "Côte d'Ivoire",
+      "iso3": "CIV",
+      "iso2": "CI",
+      "jpni": "コートジボワール",
+      "logo": "ci",
+      "kata": "コートジボワール",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "188",
+      "name": "Costa Rica",
+      "iso3": "CRI",
+      "iso2": "CR",
+      "jpni": "コスタリカ",
+      "logo": "cr",
+      "kata": "コスタリカ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "412",
+      "name": "Kosovo (under UNSC res. 1244)",
+      "iso3": "XKX",
+      "iso2": "XK",
+      "jpni": "コソボ共和国",
+      "logo": "xk",
+      "kata": "コソボ共和国",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "174",
+      "name": "Comoros",
+      "iso3": "COM",
+      "iso2": "KM",
+      "jpni": "コモロ",
+      "logo": "km",
+      "kata": "コモロ",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "170",
+      "name": "Colombia",
+      "iso3": "COL",
+      "iso2": "CO",
+      "jpni": "コロンビア",
+      "logo": "co",
+      "kata": "コロンビア",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "178",
+      "name": "Congo",
+      "iso3": "COG",
+      "iso2": "CG",
+      "jpni": "コンゴ共和国",
+      "logo": "cg",
+      "kata": "コンゴ共和国",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "180",
+      "name": "Dem. Rep. of the Congo",
+      "iso3": "COD",
+      "iso2": "CD",
+      "jpni": "コンゴ民主共和国",
+      "logo": "cd",
+      "kata": "コンゴ民主共和国",
+      "akas": "カ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "682",
+      "name": "Saudi Arabia",
+      "iso3": "SAU",
+      "iso2": "SA",
+      "jpni": "サウジアラビア",
+      "logo": "sa",
+      "kata": "サウジアラビア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "882",
+      "name": "Samoa",
+      "iso3": "WSM",
+      "iso2": "WS",
+      "jpni": "サモア",
+      "logo": "ws",
+      "kata": "サモア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "652",
+      "name": "Saint Barthélemy",
+      "iso3": "BLM",
+      "iso2": "BL",
+      "jpni": "サン・バルテルミー島",
+      "logo": "bl",
+      "kata": "サン・バルテルミー島",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "663",
+      "name": "Saint Martin (French part)",
+      "iso3": "MAF",
+      "iso2": "MF",
+      "jpni": "サン・マルタン (西インド諸島)",
+      "logo": "mf",
+      "kata": "サン・マルタン (西インド諸島)",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "678",
+      "name": "Sao Tome and Principe",
+      "iso3": "STP",
+      "iso2": "ST",
+      "jpni": "サントメ・プリンシペ",
+      "logo": "st",
+      "kata": "サントメ・プリンシペ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "894",
+      "name": "Zambia",
+      "iso3": "ZMB",
+      "iso2": "ZM",
+      "jpni": "ザンビア",
+      "logo": "zm",
+      "kata": "ザンビア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "666",
+      "name": "Saint Pierre and Miquelon",
+      "iso3": "SPM",
+      "iso2": "PM",
+      "jpni": "サンピエール島・ミクロン島",
+      "logo": "pm",
+      "kata": "サンピエール島・ミクロン島",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "674",
+      "name": "San Marino",
+      "iso3": "SMR",
+      "iso2": "SM",
+      "jpni": "サンマリノ",
+      "logo": "sm",
+      "kata": "サンマリノ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "694",
+      "name": "Sierra Leone",
+      "iso3": "SLE",
+      "iso2": "SL",
+      "jpni": "シエラレオネ",
+      "logo": "sl",
+      "kata": "シエラレオネ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "262",
+      "name": "Djibouti",
+      "iso3": "DJI",
+      "iso2": "DJ",
+      "jpni": "ジブチ",
+      "logo": "dj",
+      "kata": "ジブチ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "292",
+      "name": "Gibraltar",
+      "iso3": "GIB",
+      "iso2": "GI",
+      "jpni": "ジブラルタル",
+      "logo": "gi",
+      "kata": "ジブラルタル",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "832",
+      "name": "Jersey",
+      "iso3": "JEY",
+      "iso2": "JE",
+      "jpni": "ジャージー島",
+      "logo": "je",
+      "kata": "ジャージー島",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "388",
+      "name": "Jamaica",
+      "iso3": "JAM",
+      "iso2": "JM",
+      "jpni": "ジャマイカ",
+      "logo": "jm",
+      "kata": "ジャマイカ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "760",
+      "name": "Syrian Arab Republic",
+      "iso3": "SYR",
+      "iso2": "SY",
+      "jpni": "シリア",
+      "logo": "sy",
+      "kata": "シリア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "702",
+      "name": "Singapore",
+      "iso3": "SGP",
+      "iso2": "SG",
+      "jpni": "シンガポール",
+      "logo": "sg",
+      "kata": "シンガポール",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "534",
+      "name": "Sint Maarten (Dutch part)",
+      "iso3": "SXM",
+      "iso2": "SX",
+      "jpni": "シント・マールテン",
+      "logo": "sx",
+      "kata": "シント・マールテン",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "716",
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "iso2": "ZW",
+      "jpni": "ジンバブエ",
+      "logo": "zw",
+      "kata": "ジンバブエ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "756",
+      "name": "Switzerland",
+      "iso3": "CHE",
+      "iso2": "CH",
+      "jpni": "スイス",
+      "logo": "ch",
+      "kata": "スイス",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "752",
+      "name": "Sweden",
+      "iso3": "SWE",
+      "iso2": "SE",
+      "jpni": "スウェーデン",
+      "logo": "se",
+      "kata": "スウェーデン",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "729",
+      "name": "Sudan",
+      "iso3": "SDN",
+      "iso2": "SD",
+      "jpni": "スーダン",
+      "logo": "sd",
+      "kata": "スーダン",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "724",
+      "name": "Spain",
+      "iso3": "ESP",
+      "iso2": "ES",
+      "jpni": "スペイン",
+      "logo": "es",
+      "kata": "スペイン",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "740",
+      "name": "Suriname",
+      "iso3": "SUR",
+      "iso2": "SR",
+      "jpni": "スリナム",
+      "logo": "sr",
+      "kata": "スリナム",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "144",
+      "name": "Sri Lanka",
+      "iso3": "LKA",
+      "iso2": "LK",
+      "jpni": "スリランカ",
+      "logo": "lk",
+      "kata": "スリランカ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "703",
+      "name": "Slovakia",
+      "iso3": "SVK",
+      "iso2": "SK",
+      "jpni": "スロバキア",
+      "logo": "sk",
+      "kata": "スロバキア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "705",
+      "name": "Slovenia",
+      "iso3": "SVN",
+      "iso2": "SI",
+      "jpni": "スロベニア",
+      "logo": "si",
+      "kata": "スロベニア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "748",
+      "name": "Eswatini",
+      "iso3": "SWZ",
+      "iso2": "SZ",
+      "jpni": "スワジランド",
+      "logo": "sz",
+      "kata": "スワジランド",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "690",
+      "name": "Seychelles",
+      "iso3": "SYC",
+      "iso2": "SC",
+      "jpni": "セーシェル",
+      "logo": "sc",
+      "kata": "セーシェル",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "900",
+      "name": "World",
+      "iso3": "WLD",
+      "iso2": "1W",
+      "jpni": "世界",
+      "logo": "z1",
+      "kata": "セカイ",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "226",
+      "name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "iso2": "GQ",
+      "jpni": "赤道ギニア",
+      "logo": "gq",
+      "kata": "セキドウギニア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "686",
+      "name": "Senegal",
+      "iso3": "SEN",
+      "iso2": "SN",
+      "jpni": "セネガル",
+      "logo": "sn",
+      "kata": "セネガル",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "688",
+      "name": "Serbia",
+      "iso3": "SRB",
+      "iso2": "RS",
+      "jpni": "セルビア",
+      "logo": "rs",
+      "kata": "セルビア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "659",
+      "name": "Saint Kitts and Nevis",
+      "iso3": "KNA",
+      "iso2": "KN",
+      "jpni": "セントクリストファー・ネイビス",
+      "logo": "kn",
+      "kata": "セントクリストファー・ネイビス",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "670",
+      "name": "Saint Vincent and the Grenadines",
+      "iso3": "VCT",
+      "iso2": "VC",
+      "jpni": "セントビンセント・グレナディーン",
+      "logo": "vc",
+      "kata": "セントビンセント・グレナディーン",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "654",
+      "name": "Saint Helena",
+      "iso3": "SHN",
+      "iso2": "SH",
+      "jpni": "セントヘレナ島",
+      "logo": "sh",
+      "kata": "セントヘレナ島",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "662",
+      "name": "Saint Lucia",
+      "iso3": "LCA",
+      "iso2": "LC",
+      "jpni": "セントルシア",
+      "logo": "lc",
+      "kata": "セントルシア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "706",
+      "name": "Somalia",
+      "iso3": "SOM",
+      "iso2": "SO",
+      "jpni": "ソマリア",
+      "logo": "so",
+      "kata": "ソマリア",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "90",
+      "name": "Solomon Islands",
+      "iso3": "SLB",
+      "iso2": "SB",
+      "jpni": "ソロモン諸島",
+      "logo": "sb",
+      "kata": "ソロモン諸島",
+      "akas": "サ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "796",
+      "name": "Turks and Caicos Islands",
+      "iso3": "TCA",
+      "iso2": "TC",
+      "jpni": "タークス・カイコス諸島",
+      "logo": "tc",
+      "kata": "タークス・カイコス諸島",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "764",
+      "name": "Thailand",
+      "iso3": "THA",
+      "iso2": "TH",
+      "jpni": "タイ",
+      "logo": "th",
+      "kata": "タイ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "410",
+      "name": "Republic of Korea",
+      "iso3": "KOR",
+      "iso2": "KR",
+      "jpni": "大韓民国",
+      "logo": "kr",
+      "kata": "ダイカンミンコク",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "158",
+      "name": "China, Taiwan Province of China",
+      "iso3": "TWN",
+      "iso2": "TW",
+      "jpni": "タイワン(台湾)",
+      "logo": "tw",
+      "kata": "タイワン(台湾)",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "762",
+      "name": "Tajikistan",
+      "iso3": "TJK",
+      "iso2": "TJ",
+      "jpni": "タジキスタン",
+      "logo": "tj",
+      "kata": "タジキスタン",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "834",
+      "name": "United Republic of Tanzania",
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "jpni": "タンザニア",
+      "logo": "tz",
+      "kata": "タンザニア",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "203",
+      "name": "Czechia",
+      "iso3": "CZE",
+      "iso2": "CZ",
+      "jpni": "チェコ",
+      "logo": "cz",
+      "kata": "チェコ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "148",
+      "name": "Chad",
+      "iso3": "TCD",
+      "iso2": "TD",
+      "jpni": "チャド",
+      "logo": "td",
+      "kata": "チャド",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "140",
+      "name": "Central African Republic",
+      "iso3": "CAF",
+      "iso2": "CF",
+      "jpni": "中央アフリカ共和国",
+      "logo": "cf",
+      "kata": "チュウオウアフリカキョウワコク",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "156",
+      "name": "China",
+      "iso3": "CHN",
+      "iso2": "CN",
+      "jpni": "中華人民共和国",
+      "logo": "cn",
+      "kata": "チュウカジンミンキョウワコク",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "788",
+      "name": "Tunisia",
+      "iso3": "TUN",
+      "iso2": "TN",
+      "jpni": "チュニジア",
+      "logo": "tn",
+      "kata": "チュニジア",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "408",
+      "name": "Dem. People's Rep. of Korea",
+      "iso3": "PRK",
+      "iso2": "KP",
+      "jpni": "朝鮮民主主義人民共和国",
+      "logo": "kp",
+      "kata": "チョウセンミンシュシュギジンミンキョウワコク",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "152",
+      "name": "Chile",
+      "iso3": "CHL",
+      "iso2": "CL",
+      "jpni": "チリ",
+      "logo": "cl",
+      "kata": "チリ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "798",
+      "name": "Tuvalu",
+      "iso3": "TUV",
+      "iso2": "TV",
+      "jpni": "ツバル",
+      "logo": "tv",
+      "kata": "ツバル",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "208",
+      "name": "Denmark",
+      "iso3": "DNK",
+      "iso2": "DK",
+      "jpni": "デンマーク",
+      "logo": "dk",
+      "kata": "デンマーク",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "276",
+      "name": "Germany",
+      "iso3": "DEU",
+      "iso2": "DE",
+      "jpni": "ドイツ",
+      "logo": "de",
+      "kata": "ドイツ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "768",
+      "name": "Togo",
+      "iso3": "TGO",
+      "iso2": "TG",
+      "jpni": "トーゴ",
+      "logo": "tg",
+      "kata": "トーゴ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "772",
+      "name": "Tokelau",
+      "iso3": "TKL",
+      "iso2": "TK",
+      "jpni": "トケラウ諸島",
+      "logo": "tk",
+      "kata": "トケラウ諸島",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "214",
+      "name": "Dominican Republic",
+      "iso3": "DOM",
+      "iso2": "DO",
+      "jpni": "ドミニカ共和国",
+      "logo": "do",
+      "kata": "ドミニカ共和国",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "212",
+      "name": "Dominica",
+      "iso3": "DMA",
+      "iso2": "DM",
+      "jpni": "ドミニカ国",
+      "logo": "dm",
+      "kata": "ドミニカ国",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "780",
+      "name": "Trinidad and Tobago",
+      "iso3": "TTO",
+      "iso2": "TT",
+      "jpni": "トリニダード・トバゴ",
+      "logo": "tt",
+      "kata": "トリニダード・トバゴ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "795",
+      "name": "Turkmenistan",
+      "iso3": "TKM",
+      "iso2": "TM",
+      "jpni": "トルクメニスタン",
+      "logo": "tm",
+      "kata": "トルクメニスタン",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "792",
+      "name": "Türkiye",
+      "iso3": "TUR",
+      "iso2": "TR",
+      "jpni": "トルコ",
+      "logo": "tr",
+      "kata": "トルコ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "776",
+      "name": "Tonga",
+      "iso3": "TON",
+      "iso2": "TO",
+      "jpni": "トンガ",
+      "logo": "to",
+      "kata": "トンガ",
+      "akas": "タ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "566",
+      "name": "Nigeria",
+      "iso3": "NGA",
+      "iso2": "NG",
+      "jpni": "ナイジェリア",
+      "logo": "ng",
+      "kata": "ナイジェリア",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "520",
+      "name": "Nauru",
+      "iso3": "NRU",
+      "iso2": "NR",
+      "jpni": "ナウル",
+      "logo": "nr",
+      "kata": "ナウル",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "516",
+      "name": "Namibia",
+      "iso3": "NAM",
+      "iso2": "NA",
+      "jpni": "ナミビア",
+      "logo": "na",
+      "kata": "ナミビア",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "570",
+      "name": "Niue",
+      "iso3": "NIU",
+      "iso2": "NU",
+      "jpni": "ニウエ",
+      "logo": "nu",
+      "kata": "ニウエ",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "558",
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "iso2": "NI",
+      "jpni": "ニカラグア",
+      "logo": "ni",
+      "kata": "ニカラグア",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "562",
+      "name": "Niger",
+      "iso3": "NER",
+      "iso2": "NE",
+      "jpni": "ニジェール",
+      "logo": "ne",
+      "kata": "ニジェール",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "732",
+      "name": "Western Sahara",
+      "iso3": "ESH",
+      "iso2": "EH",
+      "jpni": "西サハラ",
+      "logo": "eh",
+      "kata": "ニシサハラ",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "392",
+      "name": "Japan",
+      "iso3": "JPN",
+      "iso2": "JP",
+      "jpni": "日本",
+      "logo": "jp",
+      "kata": "ニホン",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "540",
+      "name": "New Caledonia",
+      "iso3": "NCL",
+      "iso2": "NC",
+      "jpni": "ニューカレドニア",
+      "logo": "nc",
+      "kata": "ニューカレドニア",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "554",
+      "name": "New Zealand",
+      "iso3": "NZL",
+      "iso2": "NZ",
+      "jpni": "ニュージーランド",
+      "logo": "nz",
+      "kata": "ニュージーランド",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "524",
+      "name": "Nepal",
+      "iso3": "NPL",
+      "iso2": "NP",
+      "jpni": "ネパール",
+      "logo": "np",
+      "kata": "ネパール",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "578",
+      "name": "Norway",
+      "iso3": "NOR",
+      "iso2": "NO",
+      "jpni": "ノルウェー",
+      "logo": "no",
+      "kata": "ノルウェー",
+      "akas": "ナ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "48",
+      "name": "Bahrain",
+      "iso3": "BHR",
+      "iso2": "BH",
+      "jpni": "バーレーン",
+      "logo": "bh",
+      "kata": "バーレーン",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "332",
+      "name": "Haiti",
+      "iso3": "HTI",
+      "iso2": "HT",
+      "jpni": "ハイチ",
+      "logo": "ht",
+      "kata": "ハイチ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "586",
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "iso2": "PK",
+      "jpni": "パキスタン",
+      "logo": "pk",
+      "kata": "パキスタン",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "591",
+      "name": "Panama",
+      "iso3": "PAN",
+      "iso2": "PA",
+      "jpni": "パナマ",
+      "logo": "pa",
+      "kata": "パナマ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "548",
+      "name": "Vanuatu",
+      "iso3": "VUT",
+      "iso2": "VU",
+      "jpni": "バヌアツ",
+      "logo": "vu",
+      "kata": "バヌアツ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "44",
+      "name": "Bahamas",
+      "iso3": "BHS",
+      "iso2": "BS",
+      "jpni": "バハマ",
+      "logo": "bs",
+      "kata": "バハマ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "598",
+      "name": "Papua New Guinea",
+      "iso3": "PNG",
+      "iso2": "PG",
+      "jpni": "パプアニューギニア",
+      "logo": "pg",
+      "kata": "パプアニューギニア",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "60",
+      "name": "Bermuda",
+      "iso3": "BMU",
+      "iso2": "BM",
+      "jpni": "バミューダ諸島",
+      "logo": "bm",
+      "kata": "バミューダ諸島",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "585",
+      "name": "Palau",
+      "iso3": "PLW",
+      "iso2": "PW",
+      "jpni": "パラオ",
+      "logo": "pw",
+      "kata": "パラオ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "600",
+      "name": "Paraguay",
+      "iso3": "PRY",
+      "iso2": "PY",
+      "jpni": "パラグアイ",
+      "logo": "py",
+      "kata": "パラグアイ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "52",
+      "name": "Barbados",
+      "iso3": "BRB",
+      "iso2": "BB",
+      "jpni": "バルバドス",
+      "logo": "bb",
+      "kata": "バルバドス",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "275",
+      "name": "State of Palestine",
+      "iso3": "PSE",
+      "iso2": "PS",
+      "jpni": "パレスチナ",
+      "logo": "ps",
+      "kata": "パレスチナ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "348",
+      "name": "Hungary",
+      "iso3": "HUN",
+      "iso2": "HU",
+      "jpni": "ハンガリー",
+      "logo": "hu",
+      "kata": "ハンガリー",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "50",
+      "name": "Bangladesh",
+      "iso3": "BGD",
+      "iso2": "BD",
+      "jpni": "バングラデシュ",
+      "logo": "bd",
+      "kata": "バングラデシュ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "626",
+      "name": "Timor-Leste",
+      "iso3": "TLS",
+      "iso2": "TL",
+      "jpni": "東ティモール",
+      "logo": "tl",
+      "kata": "ヒガシティモール",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "242",
+      "name": "Fiji",
+      "iso3": "FJI",
+      "iso2": "FJ",
+      "jpni": "フィジー",
+      "logo": "fj",
+      "kata": "フィジー",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "608",
+      "name": "Philippines",
+      "iso3": "PHL",
+      "iso2": "PH",
+      "jpni": "フィリピン",
+      "logo": "ph",
+      "kata": "フィリピン",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "246",
+      "name": "Finland",
+      "iso3": "FIN",
+      "iso2": "FI",
+      "jpni": "フィンランド",
+      "logo": "fi",
+      "kata": "フィンランド",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "64",
+      "name": "Bhutan",
+      "iso3": "BTN",
+      "iso2": "BT",
+      "jpni": "ブータン",
+      "logo": "bt",
+      "kata": "ブータン",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "630",
+      "name": "Puerto Rico",
+      "iso3": "PRI",
+      "iso2": "PR",
+      "jpni": "プエルトリコ",
+      "logo": "pr",
+      "kata": "プエルトリコ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "234",
+      "name": "Faroe Islands",
+      "iso3": "FRO",
+      "iso2": "FO",
+      "jpni": "フェロー諸島",
+      "logo": "fo",
+      "kata": "フェロー諸島",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "238",
+      "name": "Falkland Islands (Malvinas)",
+      "iso3": "FLK",
+      "iso2": "FK",
+      "jpni": "フォークランド(マルビナス)諸島",
+      "logo": "fk",
+      "kata": "フォークランド(マルビナス)諸島",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "76",
+      "name": "Brazil",
+      "iso3": "BRA",
+      "iso2": "BR",
+      "jpni": "ブラジル",
+      "logo": "br",
+      "kata": "ブラジル",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "250",
+      "name": "France",
+      "iso3": "FRA",
+      "iso2": "FR",
+      "jpni": "フランス",
+      "logo": "fr",
+      "kata": "フランス",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "254",
+      "name": "French Guiana",
+      "iso3": "GUF",
+      "iso2": "GF",
+      "jpni": "フランス領ギアナ",
+      "logo": "gf",
+      "kata": "フランス領ギアナ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "258",
+      "name": "French Polynesia",
+      "iso3": "PYF",
+      "iso2": "PF",
+      "jpni": "フランス領ポリネシア",
+      "logo": "pf",
+      "kata": "フランス領ポリネシア",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "100",
+      "name": "Bulgaria",
+      "iso3": "BGR",
+      "iso2": "BG",
+      "jpni": "ブルガリア",
+      "logo": "bg",
+      "kata": "ブルガリア",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "854",
+      "name": "Burkina Faso",
+      "iso3": "BFA",
+      "iso2": "BF",
+      "jpni": "ブルキナファソ",
+      "logo": "bf",
+      "kata": "ブルキナファソ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "96",
+      "name": "Brunei Darussalam",
+      "iso3": "BRN",
+      "iso2": "BN",
+      "jpni": "ブルネイ・ダルサラーム",
+      "logo": "bn",
+      "kata": "ブルネイ・ダルサラーム",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "108",
+      "name": "Burundi",
+      "iso3": "BDI",
+      "iso2": "BI",
+      "jpni": "ブルンジ",
+      "logo": "bi",
+      "kata": "ブルンジ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "704",
+      "name": "Viet Nam",
+      "iso3": "VNM",
+      "iso2": "VN",
+      "jpni": "ベトナム",
+      "logo": "vn",
+      "kata": "ベトナム",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "204",
+      "name": "Benin",
+      "iso3": "BEN",
+      "iso2": "BJ",
+      "jpni": "ベナン",
+      "logo": "bj",
+      "kata": "ベナン",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "862",
+      "name": "Venezuela (Bolivarian Republic of)",
+      "iso3": "VEN",
+      "iso2": "VE",
+      "jpni": "ベネズエラ",
+      "logo": "ve",
+      "kata": "ベネズエラ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "112",
+      "name": "Belarus",
+      "iso3": "BLR",
+      "iso2": "BY",
+      "jpni": "ベラルーシ",
+      "logo": "by",
+      "kata": "ベラルーシ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "84",
+      "name": "Belize",
+      "iso3": "BLZ",
+      "iso2": "BZ",
+      "jpni": "ベリーズ",
+      "logo": "bz",
+      "kata": "ベリーズ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "604",
+      "name": "Peru",
+      "iso3": "PER",
+      "iso2": "PE",
+      "jpni": "ペルー",
+      "logo": "pe",
+      "kata": "ペルー",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "56",
+      "name": "Belgium",
+      "iso3": "BEL",
+      "iso2": "BE",
+      "jpni": "ベルギー",
+      "logo": "be",
+      "kata": "ベルギー",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "616",
+      "name": "Poland",
+      "iso3": "POL",
+      "iso2": "PL",
+      "jpni": "ポーランド",
+      "logo": "pl",
+      "kata": "ポーランド",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "70",
+      "name": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "iso2": "BA",
+      "jpni": "ボスニア・ヘルツェゴビナ",
+      "logo": "ba",
+      "kata": "ボスニア・ヘルツェゴビナ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "72",
+      "name": "Botswana",
+      "iso3": "BWA",
+      "iso2": "BW",
+      "jpni": "ボツワナ",
+      "logo": "bw",
+      "kata": "ボツワナ",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "68",
+      "name": "Bolivia (Plurinational State of)",
+      "iso3": "BOL",
+      "iso2": "BO",
+      "jpni": "ボリビア多民族国",
+      "logo": "bo",
+      "kata": "ボリビア多民族国",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "620",
+      "name": "Portugal",
+      "iso3": "PRT",
+      "iso2": "PT",
+      "jpni": "ポルトガル",
+      "logo": "pt",
+      "kata": "ポルトガル",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "344",
+      "name": "China, Hong Kong SAR",
+      "iso3": "HKG",
+      "iso2": "HK",
+      "jpni": "香港",
+      "logo": "hk",
+      "kata": "ホンコン",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "340",
+      "name": "Honduras",
+      "iso3": "HND",
+      "iso2": "HN",
+      "jpni": "ホンジュラス",
+      "logo": "hn",
+      "kata": "ホンジュラス",
+      "akas": "ハ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "584",
+      "name": "Marshall Islands",
+      "iso3": "MHL",
+      "iso2": "MH",
+      "jpni": "マーシャル諸島",
+      "logo": "mh",
+      "kata": "マーシャル諸島",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "175",
+      "name": "Mayotte",
+      "iso3": "MYT",
+      "iso2": "YT",
+      "jpni": "マイヨット島",
+      "logo": "yt",
+      "kata": "マイヨット島",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "446",
+      "name": "China, Macao SAR",
+      "iso3": "MAC",
+      "iso2": "MO",
+      "jpni": "マカオ",
+      "logo": "mo",
+      "kata": "マカオ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "807",
+      "name": "North Macedonia",
+      "iso3": "MKD",
+      "iso2": "MK",
+      "jpni": "マケドニア共和国",
+      "logo": "mk",
+      "kata": "マケドニア共和国",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "450",
+      "name": "Madagascar",
+      "iso3": "MDG",
+      "iso2": "MG",
+      "jpni": "マダガスカル",
+      "logo": "mg",
+      "kata": "マダガスカル",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "454",
+      "name": "Malawi",
+      "iso3": "MWI",
+      "iso2": "MW",
+      "jpni": "マラウイ",
+      "logo": "mw",
+      "kata": "マラウイ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "466",
+      "name": "Mali",
+      "iso3": "MLI",
+      "iso2": "ML",
+      "jpni": "マリ共和国",
+      "logo": "ml",
+      "kata": "マリ共和国",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "470",
+      "name": "Malta",
+      "iso3": "MLT",
+      "iso2": "MT",
+      "jpni": "マルタ",
+      "logo": "mt",
+      "kata": "マルタ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "474",
+      "name": "Martinique",
+      "iso3": "MTQ",
+      "iso2": "MQ",
+      "jpni": "マルチニーク島",
+      "logo": "mq",
+      "kata": "マルチニーク島",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "458",
+      "name": "Malaysia",
+      "iso3": "MYS",
+      "iso2": "MY",
+      "jpni": "マレーシア",
+      "logo": "my",
+      "kata": "マレーシア",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "833",
+      "name": "Isle of Man",
+      "iso3": "IMN",
+      "iso2": "IM",
+      "jpni": "マン島",
+      "logo": "im",
+      "kata": "マン島",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "583",
+      "name": "Micronesia (Fed. States of)",
+      "iso3": "FSM",
+      "iso2": "FM",
+      "jpni": "ミクロネシア連邦",
+      "logo": "fm",
+      "kata": "ミクロネシア連邦",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "710",
+      "name": "South Africa",
+      "iso3": "ZAF",
+      "iso2": "ZA",
+      "jpni": "南アフリカ共和国",
+      "logo": "za",
+      "kata": "ミナミアフリカキョウワコク",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "931",
+      "name": "South America",
+      "iso3": "SAM",
+      "iso2": "AJ",
+      "jpni": "南アメリカ",
+      "logo": "z1",
+      "kata": "ミナミアメリカ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "728",
+      "name": "South Sudan",
+      "iso3": "SSD",
+      "iso2": "SS",
+      "jpni": "南スーダン",
+      "logo": "ss",
+      "kata": "ミナミスーダン",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "104",
+      "name": "Myanmar",
+      "iso3": "MMR",
+      "iso2": "MM",
+      "jpni": "ミャンマー",
+      "logo": "mm",
+      "kata": "ミャンマー",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "484",
+      "name": "Mexico",
+      "iso3": "MEX",
+      "iso2": "MX",
+      "jpni": "メキシコ",
+      "logo": "mx",
+      "kata": "メキシコ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "480",
+      "name": "Mauritius",
+      "iso3": "MUS",
+      "iso2": "MU",
+      "jpni": "モーリシャス",
+      "logo": "mu",
+      "kata": "モーリシャス",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "478",
+      "name": "Mauritania",
+      "iso3": "MRT",
+      "iso2": "MR",
+      "jpni": "モーリタニア",
+      "logo": "mr",
+      "kata": "モーリタニア",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "508",
+      "name": "Mozambique",
+      "iso3": "MOZ",
+      "iso2": "MZ",
+      "jpni": "モザンビーク",
+      "logo": "mz",
+      "kata": "モザンビーク",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "492",
+      "name": "Monaco",
+      "iso3": "MCO",
+      "iso2": "MC",
+      "jpni": "モナコ",
+      "logo": "mc",
+      "kata": "モナコ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "462",
+      "name": "Maldives",
+      "iso3": "MDV",
+      "iso2": "MV",
+      "jpni": "モルディブ",
+      "logo": "mv",
+      "kata": "モルディブ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "498",
+      "name": "Republic of Moldova",
+      "iso3": "MDA",
+      "iso2": "MD",
+      "jpni": "モルドバ共和国",
+      "logo": "md",
+      "kata": "モルドバ共和国",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "504",
+      "name": "Morocco",
+      "iso3": "MAR",
+      "iso2": "MA",
+      "jpni": "モロッコ",
+      "logo": "ma",
+      "kata": "モロッコ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "496",
+      "name": "Mongolia",
+      "iso3": "MNG",
+      "iso2": "MN",
+      "jpni": "モンゴル",
+      "logo": "mn",
+      "kata": "モンゴル",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "500",
+      "name": "Montserrat",
+      "iso3": "MSR",
+      "iso2": "MS",
+      "jpni": "モンセラット",
+      "logo": "ms",
+      "kata": "モンセラット",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "499",
+      "name": "Montenegro",
+      "iso3": "MNE",
+      "iso2": "ME",
+      "jpni": "モンテネグロ",
+      "logo": "me",
+      "kata": "モンテネグロ",
+      "akas": "マ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "908",
+      "name": "Europe",
+      "iso3": "EUR",
+      "iso2": "EP",
+      "jpni": "ヨーロッパ",
+      "logo": "z1",
+      "kata": "ヨーロッパ",
+      "akas": "ヤ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "400",
+      "name": "Jordan",
+      "iso3": "JOR",
+      "iso2": "JO",
+      "jpni": "ヨルダン",
+      "logo": "jo",
+      "kata": "ヨルダン",
+      "akas": "ヤ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "418",
+      "name": "Lao People's Dem. Republic",
+      "iso3": "LAO",
+      "iso2": "LA",
+      "jpni": "ラオス人民民主共和国",
+      "logo": "la",
+      "kata": "ラオス人民民主共和国",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "428",
+      "name": "Latvia",
+      "iso3": "LVA",
+      "iso2": "LV",
+      "jpni": "ラトビア",
+      "logo": "lv",
+      "kata": "ラトビア",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "440",
+      "name": "Lithuania",
+      "iso3": "LTU",
+      "iso2": "LT",
+      "jpni": "リトアニア",
+      "logo": "lt",
+      "kata": "リトアニア",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "434",
+      "name": "Libya",
+      "iso3": "LBY",
+      "iso2": "LY",
+      "jpni": "リビア",
+      "logo": "ly",
+      "kata": "リビア",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "438",
+      "name": "Liechtenstein",
+      "iso3": "LIE",
+      "iso2": "LI",
+      "jpni": "リヒテンシュタイン",
+      "logo": "li",
+      "kata": "リヒテンシュタイン",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "430",
+      "name": "Liberia",
+      "iso3": "LBR",
+      "iso2": "LR",
+      "jpni": "リベリア",
+      "logo": "lr",
+      "kata": "リベリア",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "642",
+      "name": "Romania",
+      "iso3": "ROU",
+      "iso2": "RO",
+      "jpni": "ルーマニア",
+      "logo": "ro",
+      "kata": "ルーマニア",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "442",
+      "name": "Luxembourg",
+      "iso3": "LUX",
+      "iso2": "LU",
+      "jpni": "ルクセンブルク",
+      "logo": "lu",
+      "kata": "ルクセンブルク",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "646",
+      "name": "Rwanda",
+      "iso3": "RWA",
+      "iso2": "RW",
+      "jpni": "ルワンダ",
+      "logo": "rw",
+      "kata": "ルワンダ",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "426",
+      "name": "Lesotho",
+      "iso3": "LSO",
+      "iso2": "LS",
+      "jpni": "レソト",
+      "logo": "ls",
+      "kata": "レソト",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "422",
+      "name": "Lebanon",
+      "iso3": "LBN",
+      "iso2": "LB",
+      "jpni": "レバノン",
+      "logo": "lb",
+      "kata": "レバノン",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "638",
+      "name": "Réunion",
+      "iso3": "REU",
+      "iso2": "RE",
+      "jpni": "レユニオン",
+      "logo": "re",
+      "kata": "レユニオン",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "643",
+      "name": "Russian Federation",
+      "iso3": "RUS",
+      "iso2": "RU",
+      "jpni": "ロシア連邦",
+      "logo": "ru",
+      "kata": "ロシア連邦",
+      "akas": "ラ",
+      "cl": "wo"
+    }
+  },
+  {
+    "params": {
+      "id": "876",
+      "name": "Wallis and Futuna Islands",
+      "iso3": "WLF",
+      "iso2": "WF",
+      "jpni": "ワリス・フテュナ諸島",
+      "logo": "wf",
+      "kata": "ワリス・フテュナ諸島",
+      "akas": "ワ",
+      "cl": "wo"
+    }
+  }
+]

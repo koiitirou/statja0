@@ -1,0 +1,39 @@
+.retable tbody tr:nth-of-type(even),
+tbody .tr1:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+.retable td {
+  padding: 5px 2px;
+  font-size: 12px;
+  text-align: right;
+}
+.retable th {
+  color: black;
+  padding: 7px 2px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+}
+@media (min-width: 900px) {
+  .retable td,
+  .retable th {
+    font-size: 14px;
+  }
+}
+.retable td a {
+  text-decoration: none;
+}
+
+.retable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.retable th:nth-child(2),
+.retable td:nth-child(2) {
+  color: #ee7989;
+}
+.retable th:nth-child(3),
+.retable td:nth-child(3) {
+  color: steelblue;
+}

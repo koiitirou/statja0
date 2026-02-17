@@ -1,0 +1,626 @@
+[
+  {
+    "params": {
+      "id": "0",
+      "name": "全国",
+      "iso3": "Zenkoku",
+      "iso2": "0",
+      "jpni": "全国",
+      "logo": "s00",
+      "kata": "全国",
+      "akas": "全",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "1000",
+      "name": "北海道",
+      "iso3": "Hokkaido",
+      "iso2": "1000",
+      "jpni": "北海道",
+      "logo": "s01",
+      "kata": "北海道",
+      "akas": "北",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "2000",
+      "name": "青森県",
+      "iso3": "Aomori",
+      "iso2": "2000",
+      "jpni": "青森県",
+      "logo": "s02",
+      "kata": "青森県",
+      "akas": "青",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "3000",
+      "name": "岩手県",
+      "iso3": "Iwate",
+      "iso2": "3000",
+      "jpni": "岩手県",
+      "logo": "s03",
+      "kata": "岩手県",
+      "akas": "岩",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "4000",
+      "name": "宮城県",
+      "iso3": "Miyagi",
+      "iso2": "4000",
+      "jpni": "宮城県",
+      "logo": "s04",
+      "kata": "宮城県",
+      "akas": "宮",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "5000",
+      "name": "秋田県",
+      "iso3": "Akita",
+      "iso2": "5000",
+      "jpni": "秋田県",
+      "logo": "s05",
+      "kata": "秋田県",
+      "akas": "秋",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "6000",
+      "name": "山形県",
+      "iso3": "Yamagata",
+      "iso2": "6000",
+      "jpni": "山形県",
+      "logo": "s06",
+      "kata": "山形県",
+      "akas": "山",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "7000",
+      "name": "福島県",
+      "iso3": "Fukushima",
+      "iso2": "7000",
+      "jpni": "福島県",
+      "logo": "s07",
+      "kata": "福島県",
+      "akas": "福",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "8000",
+      "name": "茨城県",
+      "iso3": "Ibaraki",
+      "iso2": "8000",
+      "jpni": "茨城県",
+      "logo": "s08",
+      "kata": "茨城県",
+      "akas": "茨",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "9000",
+      "name": "栃木県",
+      "iso3": "Tochigi",
+      "iso2": "9000",
+      "jpni": "栃木県",
+      "logo": "s09",
+      "kata": "栃木県",
+      "akas": "栃",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "10000",
+      "name": "群馬県",
+      "iso3": "Gunma",
+      "iso2": "10000",
+      "jpni": "群馬県",
+      "logo": "s10",
+      "kata": "群馬県",
+      "akas": "群",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "11000",
+      "name": "埼玉県",
+      "iso3": "Saitama",
+      "iso2": "11000",
+      "jpni": "埼玉県",
+      "logo": "s11",
+      "kata": "埼玉県",
+      "akas": "埼",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "12000",
+      "name": "千葉県",
+      "iso3": "Chiba",
+      "iso2": "12000",
+      "jpni": "千葉県",
+      "logo": "s12",
+      "kata": "千葉県",
+      "akas": "千",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "13000",
+      "name": "東京都",
+      "iso3": "Tokyo",
+      "iso2": "13000",
+      "jpni": "東京都",
+      "logo": "s13",
+      "kata": "東京都",
+      "akas": "東",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "14000",
+      "name": "神奈川県",
+      "iso3": "Kanagawa",
+      "iso2": "14000",
+      "jpni": "神奈川県",
+      "logo": "s14",
+      "kata": "神奈川県",
+      "akas": "神",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "15000",
+      "name": "新潟県",
+      "iso3": "Niigata",
+      "iso2": "15000",
+      "jpni": "新潟県",
+      "logo": "s15",
+      "kata": "新潟県",
+      "akas": "新",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "16000",
+      "name": "富山県",
+      "iso3": "Toyama",
+      "iso2": "16000",
+      "jpni": "富山県",
+      "logo": "s16",
+      "kata": "富山県",
+      "akas": "富",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "17000",
+      "name": "石川県",
+      "iso3": "Ishikawa",
+      "iso2": "17000",
+      "jpni": "石川県",
+      "logo": "s17",
+      "kata": "石川県",
+      "akas": "石",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "18000",
+      "name": "福井県",
+      "iso3": "Fukui",
+      "iso2": "18000",
+      "jpni": "福井県",
+      "logo": "s18",
+      "kata": "福井県",
+      "akas": "福",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "19000",
+      "name": "山梨県",
+      "iso3": "Yamanashi",
+      "iso2": "19000",
+      "jpni": "山梨県",
+      "logo": "s19",
+      "kata": "山梨県",
+      "akas": "山",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "20000",
+      "name": "長野県",
+      "iso3": "Nagano",
+      "iso2": "20000",
+      "jpni": "長野県",
+      "logo": "s20",
+      "kata": "長野県",
+      "akas": "長",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "21000",
+      "name": "岐阜県",
+      "iso3": "Gifu",
+      "iso2": "21000",
+      "jpni": "岐阜県",
+      "logo": "s21",
+      "kata": "岐阜県",
+      "akas": "岐",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "22000",
+      "name": "静岡県",
+      "iso3": "Shizuoka",
+      "iso2": "22000",
+      "jpni": "静岡県",
+      "logo": "s22",
+      "kata": "静岡県",
+      "akas": "静",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "23000",
+      "name": "愛知県",
+      "iso3": "Aichi",
+      "iso2": "23000",
+      "jpni": "愛知県",
+      "logo": "s23",
+      "kata": "愛知県",
+      "akas": "愛",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "24000",
+      "name": "三重県",
+      "iso3": "Mie",
+      "iso2": "24000",
+      "jpni": "三重県",
+      "logo": "s24",
+      "kata": "三重県",
+      "akas": "三",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "25000",
+      "name": "滋賀県",
+      "iso3": "Shiga",
+      "iso2": "25000",
+      "jpni": "滋賀県",
+      "logo": "s25",
+      "kata": "滋賀県",
+      "akas": "滋",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "26000",
+      "name": "京都府",
+      "iso3": "Kyoto",
+      "iso2": "26000",
+      "jpni": "京都府",
+      "logo": "s26",
+      "kata": "京都府",
+      "akas": "京",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "27000",
+      "name": "大阪府",
+      "iso3": "Osaka",
+      "iso2": "27000",
+      "jpni": "大阪府",
+      "logo": "s27",
+      "kata": "大阪府",
+      "akas": "大",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "28000",
+      "name": "兵庫県",
+      "iso3": "Hyogo",
+      "iso2": "28000",
+      "jpni": "兵庫県",
+      "logo": "s28",
+      "kata": "兵庫県",
+      "akas": "兵",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "29000",
+      "name": "奈良県",
+      "iso3": "Nara",
+      "iso2": "29000",
+      "jpni": "奈良県",
+      "logo": "s29",
+      "kata": "奈良県",
+      "akas": "奈",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "30000",
+      "name": "和歌山県",
+      "iso3": "Wakayama",
+      "iso2": "30000",
+      "jpni": "和歌山県",
+      "logo": "s30",
+      "kata": "和歌山県",
+      "akas": "和",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "31000",
+      "name": "鳥取県",
+      "iso3": "Tottori",
+      "iso2": "31000",
+      "jpni": "鳥取県",
+      "logo": "s31",
+      "kata": "鳥取県",
+      "akas": "鳥",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "32000",
+      "name": "島根県",
+      "iso3": "Shimane",
+      "iso2": "32000",
+      "jpni": "島根県",
+      "logo": "s32",
+      "kata": "島根県",
+      "akas": "島",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "33000",
+      "name": "岡山県",
+      "iso3": "Okayama",
+      "iso2": "33000",
+      "jpni": "岡山県",
+      "logo": "s33",
+      "kata": "岡山県",
+      "akas": "岡",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "34000",
+      "name": "広島県",
+      "iso3": "Hiroshima",
+      "iso2": "34000",
+      "jpni": "広島県",
+      "logo": "s34",
+      "kata": "広島県",
+      "akas": "広",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "35000",
+      "name": "山口県",
+      "iso3": "Yamaguchi",
+      "iso2": "35000",
+      "jpni": "山口県",
+      "logo": "s35",
+      "kata": "山口県",
+      "akas": "山",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "36000",
+      "name": "徳島県",
+      "iso3": "Tokushima",
+      "iso2": "36000",
+      "jpni": "徳島県",
+      "logo": "s36",
+      "kata": "徳島県",
+      "akas": "徳",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "37000",
+      "name": "香川県",
+      "iso3": "Kagawa",
+      "iso2": "37000",
+      "jpni": "香川県",
+      "logo": "s37",
+      "kata": "香川県",
+      "akas": "香",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "38000",
+      "name": "愛媛県",
+      "iso3": "Ehime",
+      "iso2": "38000",
+      "jpni": "愛媛県",
+      "logo": "s38",
+      "kata": "愛媛県",
+      "akas": "愛",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "39000",
+      "name": "高知県",
+      "iso3": "Kochi",
+      "iso2": "39000",
+      "jpni": "高知県",
+      "logo": "s39",
+      "kata": "高知県",
+      "akas": "高",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "40000",
+      "name": "福岡県",
+      "iso3": "Fukuoka",
+      "iso2": "40000",
+      "jpni": "福岡県",
+      "logo": "s40",
+      "kata": "福岡県",
+      "akas": "福",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "41000",
+      "name": "佐賀県",
+      "iso3": "Saga",
+      "iso2": "41000",
+      "jpni": "佐賀県",
+      "logo": "s41",
+      "kata": "佐賀県",
+      "akas": "佐",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "42000",
+      "name": "長崎県",
+      "iso3": "Nagasaki",
+      "iso2": "42000",
+      "jpni": "長崎県",
+      "logo": "s42",
+      "kata": "長崎県",
+      "akas": "長",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "43000",
+      "name": "熊本県",
+      "iso3": "Kumamoto",
+      "iso2": "43000",
+      "jpni": "熊本県",
+      "logo": "s43",
+      "kata": "熊本県",
+      "akas": "熊",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "44000",
+      "name": "大分県",
+      "iso3": "Oita",
+      "iso2": "44000",
+      "jpni": "大分県",
+      "logo": "s44",
+      "kata": "大分県",
+      "akas": "大",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "45000",
+      "name": "宮崎県",
+      "iso3": "Miyazaki",
+      "iso2": "45000",
+      "jpni": "宮崎県",
+      "logo": "s45",
+      "kata": "宮崎県",
+      "akas": "宮",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "46000",
+      "name": "鹿児島県",
+      "iso3": "Kagoshima",
+      "iso2": "46000",
+      "jpni": "鹿児島県",
+      "logo": "s46",
+      "kata": "鹿児島県",
+      "akas": "鹿",
+      "cl": "jp"
+    }
+  },
+  {
+    "params": {
+      "id": "47000",
+      "name": "沖縄県",
+      "iso3": "Okinawa",
+      "iso2": "47000",
+      "jpni": "沖縄県",
+      "logo": "s47",
+      "kata": "沖縄県",
+      "akas": "沖",
+      "cl": "jp"
+    }
+  }
+]

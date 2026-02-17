@@ -3,6 +3,7 @@ import GoogleAnalytics from '@/components/googleanalytics';
 import './own.css';
 
 export const metadata = {
+  metadataBase: new URL('https://statja.com'),
   title: {
     template: '%s | 統計リアル',
     default: '統計リアル',

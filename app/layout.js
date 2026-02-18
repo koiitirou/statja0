@@ -5,6 +5,7 @@ import './own.css';
 
 export const metadata = {
   metadataBase: new URL('https://statja.com'),
+  description: '統計リアル - 日本と世界の統計データをランキング形式で紹介',
   title: {
     template: '%s | 統計リアル',
     default: '統計リアル',
@@ -12,7 +13,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://www.statja.com/img/twt/fav1.png',
+        url: '/img/twt/fav1.png',
         width: 300,
         height: 300,
       },

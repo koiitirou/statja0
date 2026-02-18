@@ -375,7 +375,7 @@ export function Layout({ children, ...props }) {
                   ))}
                 </Box>
                 <Box textAlign='center' p={{ xs: 1 }}>
-                  © 2022 統計リアル
+                  © 2026 統計リアル
                 </Box>
               </Container>
             </footer>

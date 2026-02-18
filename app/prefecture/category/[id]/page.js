@@ -44,7 +44,9 @@ export async function generateMetadata({ params }) {
     description: description1,
     openGraph: {
       title: title1,
+      description: description1,
     },
+    alternates: { canonical: `https://statja.com/prefecture/category/${id}` },
   };
 }
 

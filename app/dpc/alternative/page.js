@@ -8,6 +8,14 @@ export async function generateMetadata() {
     title: 'DPC代替一覧　治療実績ランキング',
     description:
       'DPC代替一覧ページ。治療実績（入院患者数、症例数）・手術件数・在院日数を病気別にまとめています。',
+    openGraph: {
+      title: 'DPC代替一覧　治療実績ランキング',
+      description:
+        'DPC代替一覧ページ。治療実績（入院患者数、症例数）・手術件数・在院日数を病気別にまとめています。',
+    },
+    alternates: {
+      canonical: 'https://statja.com/dpc/alternative',
+    },
   };
 }
 

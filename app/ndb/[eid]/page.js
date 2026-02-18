@@ -18,6 +18,11 @@ export async function generateMetadata({ params }) {
     return {
       title: `${ssg1.def.enm}の処方薬ランキング【売上・処方数・薬価】`,
       description: `${ssg1.def.enm}の治療薬ランキング一覧です。くすりの処方数・売上・前年比の推移を比較。`,
+      openGraph: {
+        title: `${ssg1.def.enm}の処方薬ランキング【売上・処方数・薬価】`,
+        description: `${ssg1.def.enm}の治療薬ランキング一覧です。くすりの処方数・売上・前年比の推移を比較。`,
+      },
+      alternates: { canonical: `https://statja.com/ndb/${eid}` },
     };
   } catch (e) {
     return { title: `処方薬ランキング ${eid}` };

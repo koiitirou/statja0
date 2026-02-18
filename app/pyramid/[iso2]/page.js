@@ -43,7 +43,11 @@ export async function generateMetadata({ params }) {
         '年の推移データをまとめました。',
       openGraph: {
         title: con_name + 'の人口ピラミッド【' + d0.yrs + '~' + l0.yrs + '年】',
+        description:
+          con_name +
+          'の人口ピラミッド(5歳階級)、総人口推移、区分人口推移のデータをまとめました。',
       },
+      alternates: { canonical: `https://statja.com/pyramid/${iso2}` },
     };
   } catch (e) {
     return {

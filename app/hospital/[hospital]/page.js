@@ -1,6 +1,7 @@
 import { server } from '@/components/config';
 import HospitalDetailClient from './HospitalDetailClient';
 import array4 from '@/public/comp/data/link/hospital_ssg_list.json';
+import JsonLd from '@/components/JsonLd';
 
 export const dynamic = 'force-static';
 export const dynamicParams = true;
@@ -22,6 +23,8 @@ export async function generateMetadata({ params }) {
   return {
     title: title1,
     description: desc1,
+    openGraph: { title: title1, description: desc1 },
+    alternates: { canonical: `https://statja.com/hospital/${hospital}` },
   };
 }
 
@@ -31,5 +34,18 @@ export default async function HospitalDetailPage({ params }) {
   if (!res.ok) return <div>データが見つかりません</div>;
   const ssg2 = await res.json();
 
-  return <HospitalDetailClient ssg2={ssg2} hospital1={hospital} />;
+  return (
+    <>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'MedicalOrganization',
+          name: ssg2.def.hospital,
+          url: `https://statja.com/hospital/${hospital}`,
+          description: `${ssg2.def.hospital}の手術件数・入院数・治療実績ランキング`,
+        }}
+      />
+      <HospitalDetailClient ssg2={ssg2} hospital1={hospital} />
+    </>
+  );
 }

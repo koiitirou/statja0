@@ -30,7 +30,8 @@ export async function generateMetadata({ params }) {
     return {
       title: title1,
       description: description1,
-      openGraph: { title: title1 },
+      openGraph: { title: title1, description: description1 },
+      alternates: { canonical: `https://statja.com/world/${category}` },
     };
   } catch (e) {
     return { title: '世界ランキング' };

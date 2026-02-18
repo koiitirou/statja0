@@ -23,6 +23,11 @@ export async function generateMetadata({ params }) {
   return {
     title: `${tDis}の病院ランキング【入院数、手術件数】`,
     description: `全国都道府県の${tDis}の病院ランキングです。治療実績（入院患者数、症例数）・手術件数・在院日数の推移を比較。`,
+    openGraph: {
+      title: `${tDis}の病院ランキング【入院数、手術件数】`,
+      description: `全国都道府県の${tDis}の病院ランキングです。治療実績（入院患者数、症例数）・手術件数・在院日数の推移を比較。`,
+    },
+    alternates: { canonical: `https://statja.com/dpc/alternative/${dhsh}` },
   };
 }
 

@@ -18,6 +18,11 @@ export async function generateMetadata({ params }) {
     return {
       title: `${con_name}の【処方数・売上・薬価】の推移`,
       description: `${con_name}の処方数・売上高・薬価の推移データ。男女別・年齢別・都道府県別に分析。`,
+      openGraph: {
+        title: `${con_name}の【処方数・売上・薬価】の推移`,
+        description: `${con_name}の処方数・売上高・薬価の推移データ。男女別・年齢別・都道府県別に分析。`,
+      },
+      alternates: { canonical: `https://statja.com/ndb/prescription/${id2}` },
     };
   } catch (e) {
     return { title: `処方薬データ ${id2}` };

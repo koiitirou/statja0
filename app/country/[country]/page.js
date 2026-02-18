@@ -23,7 +23,8 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
-    openGraph: { title },
+    openGraph: { title, description },
+    alternates: { canonical: `https://statja.com/country/${country}` },
   };
 }
 

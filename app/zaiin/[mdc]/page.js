@@ -28,6 +28,11 @@ export async function generateMetadata({ params }) {
   return {
     title: `${mdcName}の在院日数ランキング【DPC】`,
     description: `全国・各都道府県の病院における、${mdcName}の在院日数ランキングをDPCオープンデータをもとにまとめています。`,
+    openGraph: {
+      title: `${mdcName}の在院日数ランキング【DPC】`,
+      description: `全国・各都道府県の病院における、${mdcName}の在院日数ランキングをDPCオープンデータをもとにまとめています。`,
+    },
+    alternates: { canonical: `https://statja.com/zaiin/${mdc}` },
   };
 }
 

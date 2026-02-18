@@ -9,6 +9,14 @@ export async function generateMetadata() {
     title: '処方薬ランキング【NDB】売上・処方数・薬価の推移',
     description:
       'NDBオープンデータの処方薬ランキング。内服・外用・注射の売上・処方数・薬価・前年比を比較。',
+    openGraph: {
+      title: '処方薬ランキング【NDB】売上・処方数・薬価の推移',
+      description:
+        'NDBオープンデータの処方薬ランキング。内服・外用・注射の売上・処方数・薬価・前年比を比較。',
+    },
+    alternates: {
+      canonical: 'https://statja.com/ndb',
+    },
   };
 }
 

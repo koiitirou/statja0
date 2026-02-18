@@ -28,6 +28,11 @@ export async function generateMetadata({ params }) {
   return {
     title: `${mdcName}の患者数ランキング【DPC】`,
     description: `全国・各都道府県の病院における、${mdcName}の患者数ランキングをDPCオープンデータをもとにまとめています。`,
+    openGraph: {
+      title: `${mdcName}の患者数ランキング【DPC】`,
+      description: `全国・各都道府県の病院における、${mdcName}の患者数ランキングをDPCオープンデータをもとにまとめています。`,
+    },
+    alternates: { canonical: `https://statja.com/patient/${mdc}` },
   };
 }
 

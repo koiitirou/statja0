@@ -8,6 +8,14 @@ export async function generateMetadata() {
     title: '病床数ランキング【DPC】',
     description:
       '全国・各都道府県の病院における病床数ランキングをDPCオープンデータをもとにまとめています。',
+    openGraph: {
+      title: '病床数ランキング【DPC】',
+      description:
+        '全国・各都道府県の病院における病床数ランキングをDPCオープンデータをもとにまとめています。',
+    },
+    alternates: {
+      canonical: 'https://statja.com/bed',
+    },
   };
 }
 

@@ -10,6 +10,14 @@ export async function generateMetadata() {
     title: '特定健診（健康診査）の検査データ平均値【NDBオープンデータ】',
     description:
       'NDBオープンデータの特定健診（健康診査）の検査データ平均値の推移。都道府県別・年齢別・性別に分析。',
+    openGraph: {
+      title: '特定健診（健康診査）の検査データ平均値【NDBオープンデータ】',
+      description:
+        'NDBオープンデータの特定健診（健康診査）の検査データ平均値の推移。都道府県別・年齢別・性別に分析。',
+    },
+    alternates: {
+      canonical: 'https://statja.com/ndb/checkup',
+    },
   };
 }
 

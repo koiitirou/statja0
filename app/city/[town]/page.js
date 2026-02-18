@@ -24,7 +24,11 @@ export async function generateMetadata({ params }) {
       '統計に関する市区町村ランキング・データを1ページに総まとめ。推移や前年比が一目で分かる表とグラフがあります。',
     openGraph: {
       title: name1 + '統計の市区町村ランキング一覧',
+      description:
+        name1 +
+        '統計に関する市区町村ランキング・データを1ページに総まとめ。推移や前年比が一目で分かる表とグラフがあります。',
     },
+    alternates: { canonical: `https://statja.com/city/${town}` },
   };
 }
 

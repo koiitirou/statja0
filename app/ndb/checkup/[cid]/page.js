@@ -17,6 +17,11 @@ export async function generateMetadata({ params }) {
     return {
       title: `${ssg1.def.i_0}の平均値・区分割合の推移【特定健診データ】`,
       description: `${ssg1.def.i_0}の特定健診（健康診査）データの平均値の推移。都道府県別・年齢別・性別に分析。`,
+      openGraph: {
+        title: `${ssg1.def.i_0}の平均値・区分割合の推移【特定健診データ】`,
+        description: `${ssg1.def.i_0}の特定健診（健康診査）データの平均値の推移。都道府県別・年齢別・性別に分析。`,
+      },
+      alternates: { canonical: `https://statja.com/ndb/checkup/${cid}` },
     };
   } catch (e) {
     return { title: `特定健診データ ${cid}` };

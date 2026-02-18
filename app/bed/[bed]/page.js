@@ -18,6 +18,11 @@ export async function generateMetadata({ params }) {
   return {
     title: `${bedName}ランキング【DPC】`,
     description: `全国・各都道府県の病院における${bedName}ランキングをDPCオープンデータをもとにまとめています。`,
+    openGraph: {
+      title: `${bedName}ランキング【DPC】`,
+      description: `全国・各都道府県の病院における${bedName}ランキングをDPCオープンデータをもとにまとめています。`,
+    },
+    alternates: { canonical: `https://statja.com/bed/${bed}` },
   };
 }
 

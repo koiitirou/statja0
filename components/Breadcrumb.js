@@ -50,15 +50,14 @@ export default function Breadcrumb({ items }) {
               <MuiLink
                 href={item.href}
                 underline='hover'
-                color='primary'
-                sx={{ fontSize: '13px', whiteSpace: 'nowrap' }}
+                sx={{ fontSize: '13px', whiteSpace: 'nowrap', color: '#1976d2' }}
               >
                 {item.name}
               </MuiLink>
             ) : (
               <Typography
                 component='span'
-                sx={{ fontSize: '13px', color: 'rgba(0,0,0,0.6)', whiteSpace: 'nowrap' }}
+                sx={{ fontSize: '13px', color: 'rgba(0,0,0,0.7)', whiteSpace: 'nowrap' }}
               >
                 {item.name}
               </Typography>

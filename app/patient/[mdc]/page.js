@@ -1,5 +1,6 @@
 import { server } from '@/components/config';
 import PatientClient from './PatientClient';
+import JsonLd from '@/components/JsonLd';
 import path0 from '@/public/comp/data/link/path1.json';
 
 export const dynamic = 'force-static';
@@ -64,15 +65,34 @@ export default async function PatientPage({ params }) {
     },
   ];
 
+  const mdcTitle = ssg2.def?.mdn || mdc;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '患者数ランキング' },
+    { name: mdcTitle },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${mdcTitle}の患者数ランキング`,
+    description: `${mdcTitle}の患者数ランキング。全国・都道府県別の患者数・割合の推移。`,
+    url: `https://statja.com/patient/${mdc}`,
+    license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
+  };
+
   return (
-    <PatientClient
-      ssg2={ssg2}
-      columns1={columns1}
-      category1='患者数'
-      category2='patient'
-      mdc1={mdc}
-      path1={path1}
-      this_path1={this_path1}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <PatientClient
+        ssg2={ssg2}
+        columns1={columns1}
+        category1='患者数'
+        category2='patient'
+        mdc1={mdc}
+        path1={path1}
+        this_path1={this_path1}
+        breadcrumbItems={breadcrumbItems}
+      />
+    </>
   );
 }

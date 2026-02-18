@@ -7,6 +7,7 @@ import React, { useState, Fragment } from 'react';
 import classes from '@/components/d3css/mdc.module.css';
 import { scaleQuantize } from 'd3-scale';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const color1 = ['#F7FBFF','#DEEBF7','#C6DBEF','#9ECAE1','#6BAED6','#4292C6','#2171B5','#08519C','#08306B'];
 const color2 = ['black','black','black','black','black','white','white','white','white'];
@@ -19,6 +20,7 @@ export default function CheckupIndexClient({ checkup_path, summary_mean }) {
   return (
     <Layout>
     <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+      <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '特定健診データ' }]} />
       <Typography variant='h1'>{title1}</Typography>
       <Typography variant='body1'>{description1}</Typography>
       <Typography variant='h2'>特定健診各項目の平均値（合計）{sum1[0].dat.eyr}</Typography>

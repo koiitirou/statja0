@@ -5,6 +5,7 @@ import Windowed from '@/components/data/function/world_windowed';
 import Retable from '@/components/data/function/world_retable_country';
 import Link from 'next/link';
 import theme from '@/theme';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function CountryClient({
   country,
@@ -41,6 +42,7 @@ export default function CountryClient({
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '世界ランキング', href: '/world' }, { name: cls1[country].jpn }]} />
           <Windowed />
           <Typography variant='h1'>{title}</Typography>
           <Box sx={{ width: '100%', typography: 'body1' }}></Box>

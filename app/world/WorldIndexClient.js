@@ -6,6 +6,7 @@ import Windowed from '@/components/data/function/world_windowed';
 import Retable from '@/components/data/function/world_retable_top';
 import Link from 'next/link';
 import PopularClient from '@/components/data/function/popularClient.js';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function WorldIndexClient({ columns, data, cls1, options1 }) {
   // sortType functions must be set in client component (can't serialize functions across server/client boundary)
@@ -24,6 +25,7 @@ export default function WorldIndexClient({ columns, data, cls1, options1 }) {
   return (
     <Layout>
       <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+        <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '世界ランキング' }]} />
         <Windowed />
         <Typography variant='h1' component='h1'>
           各統計の世界ランキング【国別順位】

@@ -1,5 +1,6 @@
 import { server } from '@/components/config';
 import DpcAltDetailClient from './DpcAltDetailClient';
+import JsonLd from '@/components/JsonLd';
 import array44 from '@/public/comp/data/link/dpc_alternative_path.json';
 
 export const dynamic = 'force-static';
@@ -81,18 +82,36 @@ export default async function DpcAltDetailPage({ params }) {
   });
 
   const icdis = tArray.params.icdis;
+  const tDis = ssg1.definition.dis;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: 'DPC代替一覧', href: '/dpc/alternative' },
+    { name: tDis },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${tDis}の病院ランキング`,
+    description: `全国都道府県の${tDis}の病院ランキング。手術件数・治療実績の推移を比較。`,
+    url: `https://statja.com/dpc/alternative/${dhsh}`,
+    license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
+  };
 
   return (
-    <DpcAltDetailClient
-      ssg1={ssg1}
-      did1={did}
-      graphList={graphList}
-      time_list2={time_list2}
-      yearList={yearList}
-      columns={columns}
-      dhsh={dhsh}
-      tArray={tArray}
-      icdis={icdis}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <DpcAltDetailClient
+        breadcrumbItems={breadcrumbItems}
+        ssg1={ssg1}
+        did1={did}
+        graphList={graphList}
+        time_list2={time_list2}
+        yearList={yearList}
+        columns={columns}
+        dhsh={dhsh}
+        tArray={tArray}
+        icdis={icdis}
+      />
+    </>
   );
 }

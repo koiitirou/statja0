@@ -11,6 +11,7 @@ import { json } from 'd3-fetch';
 import Pr2_windowed from '@/components/data/function/pr2_windowed';
 import Link from 'next/link';
 import React from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function CategoryClient({ ssg1: initialSsg1, id, thisRef0, thisRef1, thisRef2, thisRelated }) {
   var marks = [];
@@ -123,6 +124,7 @@ export default function CategoryClient({ ssg1: initialSsg1, id, thisRef0, thisRe
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '都道府県ランキング', href: '/prefecture' }, { name: initialSsg1.def.tl1 }]} />
           <Pr2_windowed />
           <Typography variant='h1' component='h1'>
             {title1}

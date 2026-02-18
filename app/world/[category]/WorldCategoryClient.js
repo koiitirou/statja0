@@ -5,6 +5,7 @@ import Windowed from '@/components/data/function/world_windowed';
 import Retable from '@/components/data/function/world_retable';
 import Link from 'next/link';
 import theme from '@/theme';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function WorldCategoryClient({
   did1,
@@ -44,6 +45,7 @@ export default function WorldCategoryClient({
             [theme.breakpoints.up('md')]: { maxWidth: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '世界ランキング', href: '/world' }, { name: title1 }]} />
           <Windowed />
           <Typography variant='h1' component='h1'>
             {title1}

@@ -4,6 +4,7 @@ import { Box, Typography } from '@mui/material';
 import Retable from '@/components/data/function/city_retable';
 import theme from '@/theme';
 import Cit_windowed from '@/components/data/function/cit_windowed';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function CityCategoryClient({ ssg1, city }) {
   const did1 = city;
@@ -64,6 +65,7 @@ export default function CityCategoryClient({ ssg1, city }) {
             [theme.breakpoints.up('md')]: { maxWidth: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '市区町村ランキング', href: '/city' }, { name: ssg1.def.tl1 }]} />
           <Cit_windowed />
           <Typography variant='h1' component='h1'>
             {title1}

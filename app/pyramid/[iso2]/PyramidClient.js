@@ -4,8 +4,9 @@ import { Box, Typography } from '@mui/material';
 import Search_country from '@/components/data/function/search_country';
 import Pyramid2 from '@/components/data/function/Pyramid2';
 import theme from '@/theme';
+import Breadcrumb from '@/components/Breadcrumb';
 
-export default function PyramidClient({ iso2, res2, res3, con_name }) {
+export default function PyramidClient({ iso2, res2, res3, con_name, breadcrumbItems }) {
   if (!res2 || res2.length === 0) {
     return (
       <Layout>
@@ -24,6 +25,7 @@ export default function PyramidClient({ iso2, res2, res3, con_name }) {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}
           <Search_country res3={res3} />
           <Typography variant='h1' sx={{ background: 'lightgrey', padding: '8px' }}>
             {con_name}の人口ピラミッド

@@ -1,5 +1,6 @@
 import { server } from '@/components/config';
 import PrescriptionClient from './PrescriptionClient';
+import JsonLd from '@/components/JsonLd';
 
 export const dynamic = 'force-static';
 export const dynamicParams = true;
@@ -41,6 +42,24 @@ export default async function PrescriptionPage({ params }) {
   }
 
   const con_name = res2.def.dn2;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '処方ランキング', href: '/ndb' },
+    { name: con_name },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${con_name}の処方数・売上・薬価の推移`,
+    description: `${con_name}の処方数・売上・薬価の推移をまとめました。`,
+    url: `https://statja.com/ndb/prescription/${id2}`,
+    license: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html',
+  };
 
-  return <PrescriptionClient id2={id2} res2={res2} con_name={con_name} />;
+  return (
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <PrescriptionClient id2={id2} res2={res2} con_name={con_name} breadcrumbItems={breadcrumbItems} />
+    </>
+  );
 }

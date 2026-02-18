@@ -1,5 +1,6 @@
 import { server } from '@/components/config';
 import DpcDidClient from './DpcDidClient';
+import JsonLd from '@/components/JsonLd';
 import array4 from '@/public/comp/data/link/dpc_ssg_list2.json';
 
 export const dynamic = 'force-static';
@@ -77,17 +78,35 @@ export default async function DpcDidPage({ params }) {
   });
 
   const icdis = tArray.params.icd;
+  const tDis = ssg1.definition.dis;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: 'DPC病名一覧', href: '/dpc' },
+    { name: tDis },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${tDis}の病院ランキング`,
+    description: `全国都道府県の${tDis}の病院ランキング。治療実績・手術件数・在院日数の推移を比較。`,
+    url: `https://statja.com/dpc/${did}`,
+    license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
+  };
 
   return (
-    <DpcDidClient
-      ssg1={ssg1}
-      did1={did}
-      graphList={graphList}
-      time_list2={time_list2}
-      yearList={yearList}
-      columns={columns}
-      dhsh={null}
-      icdis={icdis}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <DpcDidClient
+        breadcrumbItems={breadcrumbItems}
+        ssg1={ssg1}
+        did1={did}
+        graphList={graphList}
+        time_list2={time_list2}
+        yearList={yearList}
+        columns={columns}
+        dhsh={null}
+        icdis={icdis}
+      />
+    </>
   );
 }

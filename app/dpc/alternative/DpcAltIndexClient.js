@@ -7,6 +7,7 @@ import array4 from '@/public/comp/data/link/dpc_alternative_path.json';
 import Link from 'next/link';
 import PopularClient from '@/components/data/function/popularClient.js';
 import theme from '@/theme';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const dcat = Array.from(
   new Set(
@@ -31,6 +32,7 @@ const DpcAltIndexClient = () => {
         [theme.breakpoints.up('md')]: { width: '67%' },
       }}
     >
+      <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: 'DPC代替一覧' }]} />
       <Search_dpc />
       <Typography variant='h2'>よく見られている病院</Typography>
       <PopularClient path='hospital' />

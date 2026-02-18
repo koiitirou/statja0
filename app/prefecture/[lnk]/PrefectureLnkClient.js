@@ -7,6 +7,7 @@ import theme from '@/theme';
 import ref2 from '@/components/prefecture_list2.json';
 import pr2_path from '@/components/pr2_path/pr2_path.json';
 import yasai_path from '@/components/pr2_path/yasai_path.json';
+import Breadcrumb from '@/components/Breadcrumb';
 
 var array4_full = [];
 Object.keys(pr2_path.refs).forEach((v, i) => {
@@ -29,6 +30,7 @@ export default function PrefectureLnkClient({ json1, lnk, array4 }) {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '都道府県ランキング', href: '/prefecture' }, { name: ref1.nam }]} />
           <Pr2_windowed />
           <Pr2_link ref1={ref1} json1={json1} array4={array4_full} ref2={ref2} />
           <Typography

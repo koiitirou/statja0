@@ -1,5 +1,6 @@
 import { server } from '@/components/config';
 import ZaiinClient from './ZaiinClient';
+import JsonLd from '@/components/JsonLd';
 import path0 from '@/public/comp/data/link/path1.json';
 
 export const dynamic = 'force-static';
@@ -59,15 +60,34 @@ export default async function ZaiinPage({ params }) {
     { Header: '在院日数指標', accessor: 'in1' },
   ];
 
+  const mdcTitle = ssg2.def?.mdn || mdc;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '在院日数ランキング' },
+    { name: mdcTitle },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${mdcTitle}の在院日数ランキング`,
+    description: `${mdcTitle}の在院日数ランキング。全国・都道府県別の在院日数・指標の推移。`,
+    url: `https://statja.com/zaiin/${mdc}`,
+    license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
+  };
+
   return (
-    <ZaiinClient
-      ssg2={ssg2}
-      columns1={columns1}
-      category1='在院日数'
-      category2='zaiin'
-      mdc1={mdc}
-      path1={path1}
-      this_path1={this_path1}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <ZaiinClient
+        ssg2={ssg2}
+        columns1={columns1}
+        category1='在院日数'
+        category2='zaiin'
+        mdc1={mdc}
+        path1={path1}
+        this_path1={this_path1}
+        breadcrumbItems={breadcrumbItems}
+      />
+    </>
   );
 }

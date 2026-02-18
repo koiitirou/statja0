@@ -5,6 +5,7 @@ import theme from '@/theme';
 import Cit_windowed from '@/components/data/function/cit_windowed';
 import Retable from '@/components/data/function/city_retable_cinfo';
 import cit_path from '@/components/cit_path/cit_path.json';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const ref2 = cit_path.pref;
 
@@ -47,6 +48,7 @@ export default function CityInfoClient({ cinfo, res2 }) {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '市区町村ランキング', href: '/city' }, { name: th_prefec ? th_prefec.jln : '' }]} />
           <Cit_windowed />
           <Typography variant='h1'>{title1}</Typography>
           <Typography variant='body1'>{description1}</Typography>

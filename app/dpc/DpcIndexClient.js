@@ -13,6 +13,7 @@ import { useMemo, useState, useEffect } from 'react';
 import { matchSorter } from 'match-sorter';
 import PopularClient from '@/components/data/function/popularClient.js';
 import index_data from '@/components/prefecture/index_data.json';
+import Breadcrumb from '@/components/Breadcrumb';
 
 ///////////////都道府県
 var options2 = [];
@@ -163,6 +164,7 @@ const DpcIndexClient = () => {
   return (
     <Layout>
     <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+      <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: 'DPC病名一覧' }]} />
       <Search_dpc />
       <Typography variant='h2'>よく見られている病院</Typography>
       <PopularClient path='hospital' />

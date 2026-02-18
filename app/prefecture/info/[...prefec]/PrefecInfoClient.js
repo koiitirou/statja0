@@ -5,6 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Typography, Box, Button } from '@mui/material';
 import Pr2_windowed from '@/components/data/function/pr2_windowed';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function PrefecInfoClient({ prefec, res2, ref3, pref1 }) {
   const th_prefec = pref1[prefec[0]];
@@ -36,6 +37,7 @@ export default function PrefecInfoClient({ prefec, res2, ref3, pref1 }) {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '都道府県ランキング', href: '/prefecture' }, { name: th_prefec.tln }]} />
           <Pr2_windowed />
           <Typography variant='h1'>{title1}</Typography>
 

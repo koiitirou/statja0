@@ -43,5 +43,11 @@ export default async function CheckupCidPage({ params }) {
     return <div>データが見つかりません。</div>;
   }
 
-  return <CheckupCidClient cid={cid} ssg1={ssg1} ssg2={ssg2} />;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '特定健診データ', href: '/ndb/checkup' },
+    { name: ssg1.def?.i_0 || cid },
+  ];
+
+  return <CheckupCidClient cid={cid} ssg1={ssg1} ssg2={ssg2} breadcrumbItems={breadcrumbItems} />;
 }

@@ -7,6 +7,7 @@ import HospitalCategory from '@/components/data/function/hospital_category';
 import HospitalKihon from '@/components/data/function/hospital_kihon';
 import { server } from '@/components/config';
 import { json } from 'd3-fetch';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export default function HospitalDetailClient({ ssg2, hospital1 }) {
   const [ydata, setYdata] = useState(null);
@@ -25,6 +26,7 @@ export default function HospitalDetailClient({ ssg2, hospital1 }) {
   return (
     <Layout>
     <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
+      <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '病院ランキング', href: '/hospital' }, { name: ssg2.def.hospital }]} />
       <Search_dpc />
       <Typography variant='h1'>{title1}</Typography>
       <Typography variant='body1'>

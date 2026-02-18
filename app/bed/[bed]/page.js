@@ -1,5 +1,6 @@
 import { server } from '@/components/config';
 import BedDetailClient from './BedDetailClient';
+import JsonLd from '@/components/JsonLd';
 import path1Data from '@/public/comp/data/link/bed_path.json';
 
 export const dynamic = 'force-static';
@@ -39,14 +40,32 @@ export default async function BedDetailPage({ params }) {
   const category1 = path2.params.mdn;
   const category2 = path2.params.mdc;
 
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '病床数ランキング', href: '/bed' },
+    { name: category1 },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${category1}の病床数ランキング`,
+    description: `${category1}の病床数ランキング。全国の病院の病床数を比較。`,
+    url: `https://statja.com/bed/${bed}`,
+    license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
+  };
+
   return (
-    <BedDetailClient
-      ssg2={ssg2}
-      columns1={columns1}
-      category1={category1}
-      category2={category2}
-      mdc1=''
-      path2={path2}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <BedDetailClient
+        ssg2={ssg2}
+        columns1={columns1}
+        category1={category1}
+        category2={category2}
+        mdc1=''
+        path2={path2}
+        breadcrumbItems={breadcrumbItems}
+      />
+    </>
   );
 }

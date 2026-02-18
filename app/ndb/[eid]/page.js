@@ -1,6 +1,7 @@
 import { server } from '@/components/config';
 import array3 from '@/components/path_ndb/sum_prescription_path.json';
 import NdbEidClient from './NdbEidClient';
+import JsonLd from '@/components/JsonLd';
 
 export const dynamic = 'force-static';
 export const dynamicParams = true;
@@ -61,15 +62,33 @@ export default async function NdbEidPage({ params }) {
     { value: 'gum', label: '後発率', unit: '%', rev: false },
   ];
 
+  const tDis = ssg1.def.dnm;
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '処方ランキング', href: '/ndb' },
+    { name: tDis },
+  ];
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${tDis}の処方ランキング`,
+    description: `${tDis}の処方数・売上・薬価の推移。`,
+    url: `https://statja.com/ndb/${eid}`,
+    license: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html',
+  };
+
   return (
-    <NdbEidClient
-      eid={eid}
-      ssg1={ssg1}
-      ssg2={ssg2}
-      kbn1={kbn1}
-      graphList={graphList}
-      graphList2={graphList2}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <NdbEidClient
+        eid={eid}
+        ssg1={ssg1}
+        ssg2={ssg2}
+        kbn1={kbn1}
+        graphList={graphList}
+        graphList2={graphList2}
+        breadcrumbItems={breadcrumbItems}
+      />
+    </>
   );
 }
-

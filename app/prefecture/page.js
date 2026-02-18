@@ -5,6 +5,7 @@ import React from 'react';
 import Pr2_windowed from '@/components/data/function/pr2_windowed';
 import PopularClient from '@/components/data/function/popularClient';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Typography, Box, Grid } from '@mui/material';
 import pr2_path from '@/components/pr2_path/pr2_path.json';
 import yasai_path from '@/components/pr2_path/yasai_path.json';
@@ -53,6 +54,7 @@ export default function PrefecturePage() {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '都道府県ランキング' }]} />
           <Typography variant='h1'>{title1}</Typography>
           <Typography variant='body1'>{description1}</Typography>
           <Pr2_windowed />

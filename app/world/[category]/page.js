@@ -2,6 +2,7 @@ import { server } from '@/components/config';
 import { notFound } from 'next/navigation';
 import wor_path from '@/components/wor/wor_path.json';
 import WorldCategoryClient from './WorldCategoryClient';
+import JsonLd from '@/components/JsonLd';
 
 const cls1 = wor_path.country;
 
@@ -71,17 +72,28 @@ export default async function WorldCategoryPage({ params }) {
     ssg1.def.ral[2],
   ).toLocaleString()}${unit1}でした。`;
 
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `${title1}`,
+    description: description1,
+    url: `https://statja.com/world/${category}`,
+  };
+
   return (
-    <WorldCategoryClient
-      did1={category}
-      ssg1={ssg1}
-      marks={marks}
-      columns={columns}
-      graphList={graphList}
-      time_list2={time_list2}
-      cls1={cls1}
-      title1={title1}
-      description1={description1}
-    />
+    <>
+      <JsonLd data={datasetJsonLd} />
+      <WorldCategoryClient
+        did1={category}
+        ssg1={ssg1}
+        marks={marks}
+        columns={columns}
+        graphList={graphList}
+        time_list2={time_list2}
+        cls1={cls1}
+        title1={title1}
+        description1={description1}
+      />
+    </>
   );
 }

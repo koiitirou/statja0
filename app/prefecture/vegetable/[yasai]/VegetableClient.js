@@ -10,6 +10,7 @@ import theme from '@/theme';
 import { json } from 'd3-fetch';
 import Pr2_windowed from '@/components/data/function/pr2_windowed';
 import ref1 from '@/components/prefecture_list2.json';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const VegetableClient = ({ ssg1: initialSsg1, yasai }) => {
   var marks = [];
@@ -101,6 +102,7 @@ const VegetableClient = ({ ssg1: initialSsg1, yasai }) => {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '都道府県ランキング', href: '/prefecture' }, { name: initialSsg1.def.tl1 }]} />
           <Pr2_windowed />
           <Typography variant='h1' component='h1'>
             {title1}

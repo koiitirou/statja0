@@ -76,12 +76,19 @@ export default async function PyramidPage({ params }) {
     res2 = [];
   }
 
+  const breadcrumbItems = [
+    { name: 'トップ', href: '/' },
+    { name: '世界ランキング', href: '/world' },
+    { name: `${con_name}の人口ピラミッド` },
+  ];
+
   return (
     <PyramidClient
       iso2={iso2}
       res2={res2}
       res3={res3 || null}
       con_name={con_name}
+      breadcrumbItems={breadcrumbItems}
     />
   );
 }

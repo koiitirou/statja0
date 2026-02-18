@@ -1,5 +1,6 @@
 import ThemeRegistry from '@/components/ThemeRegistry';
 import GoogleAnalytics from '@/components/googleanalytics';
+import GoogleAdsense from '@/components/googleadsense';
 import './own.css';
 
 export const metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
           {children}
         </ThemeRegistry>
         <GoogleAnalytics />
+        <GoogleAdsense />
       </body>
     </html>
   );

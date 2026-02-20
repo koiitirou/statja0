@@ -1,6 +1,7 @@
 'use client';
 import Script from 'next/script';
 
+
 const GoogleAdsense = () => (
   <>
     {process.env.NODE_ENV === 'production' && (

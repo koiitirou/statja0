@@ -11,10 +11,16 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 export default function Breadcrumb({ items }) {
   if (!items || items.length === 0) return null;
 
+  // Ensure all items have a valid name for JSON-LD (Google requires name or item.name)
+  const validItems = items.map((item) => ({
+    ...item,
+    name: item.name || 'ページ',
+  }));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: items.map((item, i) => ({
+    itemListElement: validItems.map((item, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,

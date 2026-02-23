@@ -48,7 +48,7 @@ export default function CityInfoClient({ cinfo, res2 }) {
             [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' },
           }}
         >
-          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '市区町村ランキング', href: '/city' }, { name: th_prefec ? th_prefec.jln : '' }]} />
+          <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '市区町村ランキング', href: '/city' }, { name: th_prefec ? th_prefec.jln : '統計ランキング' }]} />
           <Cit_windowed />
           <Typography variant='h1'>{title1}</Typography>
           <Typography variant='body1'>{description1}</Typography>

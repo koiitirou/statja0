@@ -76,8 +76,10 @@ export default async function WorldCategoryPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${title1}`,
-    description: description1,
+    description: `${ssg1.def.idj}の世界ランキング。${description1}世界各国の${ssg1.def.idj}を国別に比較したデータセットです。`,
     url: `https://statja.com/world/${category}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
+    license: 'https://data.worldbank.org/summary-terms-of-use',
   };
 
   return (

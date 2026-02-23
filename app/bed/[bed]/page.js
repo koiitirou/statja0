@@ -49,8 +49,9 @@ export default async function BedDetailPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${category1}の病床数ランキング`,
-    description: `${category1}の病床数ランキング。全国の病院の病床数を比較。`,
+    description: `全国・各都道府県の病院における${category1}ランキングをDPCオープンデータをもとにまとめています。全国の病院の病床数を比較できます。`,
     url: `https://statja.com/bed/${bed}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
     license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
   };
 

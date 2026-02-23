@@ -72,8 +72,9 @@ export default async function NdbEidPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${tDis}の処方ランキング`,
-    description: `${tDis}の処方数・売上・薬価の推移。`,
+    description: `${tDis}の治療薬ランキング一覧です。くすりの処方数・売上・前年比・薬価の推移を比較。NDBオープンデータをもとに集計しています。`,
     url: `https://statja.com/ndb/${eid}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
     license: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html',
   };
 

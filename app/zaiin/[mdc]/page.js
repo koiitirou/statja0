@@ -70,8 +70,9 @@ export default async function ZaiinPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${mdcTitle}の在院日数ランキング`,
-    description: `${mdcTitle}の在院日数ランキング。全国・都道府県別の在院日数・指標の推移。`,
+    description: `全国・各都道府県の病院における、${mdcTitle}の在院日数ランキングをDPCオープンデータをもとにまとめています。全国・都道府県別の在院日数・指標の推移を比較できます。`,
     url: `https://statja.com/zaiin/${mdc}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
     license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
   };
 

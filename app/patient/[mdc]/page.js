@@ -75,8 +75,9 @@ export default async function PatientPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${mdcTitle}の患者数ランキング`,
-    description: `${mdcTitle}の患者数ランキング。全国・都道府県別の患者数・割合の推移。`,
+    description: `全国・各都道府県の病院における、${mdcTitle}の患者数ランキングをDPCオープンデータをもとにまとめています。全国・都道府県別の患者数・割合の推移を比較できます。`,
     url: `https://statja.com/patient/${mdc}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
     license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
   };
 

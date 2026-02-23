@@ -51,8 +51,9 @@ export default async function PrescriptionPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${con_name}の処方数・売上・薬価の推移`,
-    description: `${con_name}の処方数・売上・薬価の推移をまとめました。`,
+    description: `${con_name}の処方数・売上高・薬価の推移データです。男女別・年齢別・都道府県別に分析。NDBオープンデータをもとに集計しています。`,
     url: `https://statja.com/ndb/prescription/${id2}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
     license: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html',
   };
 

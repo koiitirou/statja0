@@ -88,8 +88,9 @@ export default async function DpcDidPage({ params }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: `${tDis}の病院ランキング`,
-    description: `全国都道府県の${tDis}の病院ランキング。治療実績・手術件数・在院日数の推移を比較。`,
+    description: `全国都道府県の${tDis}の病院ランキングです。治療実績（入院患者数、症例数）・手術件数・在院日数の推移を比較。DPCオープンデータをもとに集計しています。`,
     url: `https://statja.com/dpc/${did}`,
+    creator: { '@type': 'Organization', name: '統計リアル', url: 'https://statja.com' },
     license: 'https://www.mhlw.go.jp/stf/shingi2/0000196043_00012.html',
   };
 

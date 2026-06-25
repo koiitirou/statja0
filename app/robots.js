@@ -4,7 +4,7 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://statja.com/sitemap.xml',
+    sitemap: 'https://statja.com/sitemap_index.xml',
     host: 'https://statja.com',
   };
 }

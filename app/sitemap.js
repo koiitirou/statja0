@@ -2,13 +2,16 @@ import fs from 'fs';
 import path from 'path';
 
 const SITE_URL = 'https://statja.com';
+// Sitemaps spec caps a single file at 50,000 URLs. We have >50k, so split with
+// generateSitemaps(). Keep chunks comfortably under the cap.
+const CHUNK = 45000;
 
 function readJson(filePath) {
   const fullPath = path.join(process.cwd(), filePath);
   return JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
 }
 
-export default function sitemap() {
+function buildAll() {
   const now = new Date().toISOString();
   const entry = (p) => ({ url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'daily', priority: 0.7 });
 
@@ -101,4 +104,18 @@ export default function sitemap() {
   mdcs.forEach((m) => { urls.push(entry(`/patient/${m}`)); urls.push(entry(`/zaiin/${m}`)); });
 
   return urls;
+}
+
+// Split into <=50,000-URL chunks. Next.js serves these at /sitemap/[id].xml
+// and a sitemap index at /sitemap.xml.
+export async function generateSitemaps() {
+  const total = buildAll().length;
+  const count = Math.max(1, Math.ceil(total / CHUNK));
+  return Array.from({ length: count }, (_, id) => ({ id }));
+}
+
+export default function sitemap({ id }) {
+  const all = buildAll();
+  const i = Number(id) || 0;
+  return all.slice(i * CHUNK, (i + 1) * CHUNK);
 }

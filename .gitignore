@@ -42,3 +42,6 @@ next-env.d.ts
 
 # reference
 /example
+
+# generated NDB JSON (dev-local only; deployed to GCS bucket statapi1, not committed)
+/public/statapi1/

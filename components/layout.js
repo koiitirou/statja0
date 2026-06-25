@@ -26,6 +26,7 @@ const footerLink = [
   { title: '都道府県ランキング', href: '/prefecture' },
   { title: '市区町村ランキング', href: '/city' },
   { title: '処方薬ランキング', href: '/ndb' },
+  { title: '医科診療行為データ', href: '/medical' },
   { title: '特定健診データ', href: '/ndb/checkup' },
   { title: '病院ランキング', href: '/hospital' },
   { title: 'プライバシーポリシー', href: '/post/privacypolicy' },
@@ -101,6 +102,13 @@ const ResponsiveAppBar = (props) => {
           <Typography textAlign='center'>
             <MuiLink href={'/ndb/'} sx={{ color: 'black' }}>
               処方薬
+            </MuiLink>
+          </Typography>
+        </Button>
+        <Button style={{ color: 'black' }}>
+          <Typography textAlign='center'>
+            <MuiLink href={'/medical/'} sx={{ color: 'black' }}>
+              医科診療
             </MuiLink>
           </Typography>
         </Button>
@@ -193,6 +201,7 @@ const ResponsiveAppBar = (props) => {
     { href: '/prefecture/', label: '都道府県ランキング' },
     { href: '/city/', label: '市区町村ランキング' },
     { href: '/ndb/', label: '処方薬ランキング' },
+    { href: '/medical/', label: '医科診療行為データ' },
     { href: '/ndb/checkup/', label: '特定健診データ' },
   ];
 

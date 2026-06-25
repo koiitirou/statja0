@@ -13,7 +13,7 @@ export default function sitemap() {
   const entry = (p) => ({ url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'daily', priority: 0.7 });
 
   // Static pages
-  const staticPaths = ['/', '/bed', '/city', '/dpc', '/dpc/alternative', '/hospital', '/ndb', '/ndb/checkup', '/prefecture', '/world', '/post/privacypolicy'];
+  const staticPaths = ['/', '/bed', '/city', '/dpc', '/dpc/alternative', '/hospital', '/ndb', '/ndb/checkup', '/medical', '/prefecture', '/world', '/post/privacypolicy'];
   const urls = staticPaths.map(entry);
 
   // /hospital/[hospital]
@@ -46,6 +46,14 @@ export default function sitemap() {
   // /ndb/checkup/[cid]
   const checkup = readJson('components/mdc/exp/checkup_path.json');
   checkup.forEach((s) => urls.push(entry(`/ndb/checkup/${s.params.cid}`)));
+
+  // /medical/[mid] - 医科診療行為（算定回数）
+  const medical = readJson('components/path_ndb/medical_path.json');
+  medical.path.forEach((s) => urls.push(entry(`/medical/${s.params.mid}`)));
+  // /medical/category/[cat] - 区分別ランキング
+  (medical.epath || []).forEach((s) => urls.push(entry(`/medical/category/${s.params.cat}`)));
+  // /medical/sub/[sub] - 分類別ランキング
+  (medical.subpath || []).forEach((s) => urls.push(entry(`/medical/sub/${s.params.sub}`)));
 
   // /pyramid/[iso2]
   const pop0 = readJson('components/pop/pop_path.json');

@@ -11,6 +11,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 
 const Blogcard = (props) => {
   return (
@@ -94,6 +95,12 @@ export default function HomeClient() {
             title1='処方薬ランキング'
             sub1='処方数・薬価の性別・都道府県別・区分別データランキング推移'
             icon1={<VaccinesIcon sx={{ fill: '#007FFF' }} fontSize='large' />}
+          />
+          <Blogcard
+            href1='/medical/'
+            title1='医科診療行為データ'
+            sub1='医科診療行為の算定回数を性別・年齢別・都道府県別に比較（推移）'
+            icon1={<MedicalServicesIcon sx={{ fill: '#007FFF' }} fontSize='large' />}
           />
           <Blogcard
             href1='/ndb/checkup/'

@@ -8,6 +8,10 @@ const Windowed = dynamic(
   () => import('@/components/data/function/medical_windowed'),
   { ssr: false }
 );
+const MedicalTreemap = dynamic(
+  () => import('@/components/data/function/medical_treemap'),
+  { ssr: false }
+);
 
 export default function MedicalIndexClient() {
   return (
@@ -16,6 +20,7 @@ export default function MedicalIndexClient() {
         <Box sx={{ [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' } }}>
           <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '医科診療行為' }]} />
           <Windowed />
+          <MedicalTreemap />
         </Box>
       </Box>
     </Layout>

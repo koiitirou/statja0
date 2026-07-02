@@ -19,8 +19,8 @@ export default function MedicalIndexClient() {
       <Box sx={{ p: 1, maxWidth: '1300px', width: 'auto', margin: 'auto' }}>
         <Box sx={{ [theme.breakpoints.up('md')]: { width: '67%', margin: 'auto' } }}>
           <Breadcrumb items={[{ name: 'トップ', href: '/' }, { name: '医科診療行為' }]} />
-          <Windowed />
           <MedicalTreemap />
+          <Windowed />
         </Box>
       </Box>
     </Layout>

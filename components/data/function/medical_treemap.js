@@ -1,5 +1,5 @@
 'use client';
-// 医科診療行為のスクエアマップ（ツリーマップ）
+// 医科診療行為のツリーマップ
 // 区分(21) → 分類(bcd) → 診療行為(mid) のドリルダウン。各midは単一のcat/bcdに属する
 // 非重複階層（medical_tree生成時に分類合計=区分合計を全年検証済み）。
 // 指標: 売上(試算)・算定回数（2015-2024スライダー）／患者数（2024・公表分の延べ合計のみ）。
@@ -200,7 +200,7 @@ const MedicalTreemap = () => {
   return (
     <Box sx={{ my: 2 }}>
       <Typography variant='h2' component='h2'>
-        医科診療行為のスクエアマップ（{year}年度・{METRICS.find((m) => m.key === metric).label}）
+        医科診療行為のツリーマップ（{year}年度・{METRICS.find((m) => m.key === metric).label}）
       </Typography>
       <Typography variant='caption' color='dimgrey' display='block'>
         面積が{METRICS.find((m) => m.key === metric).label}の大きさです。タイルをクリックすると
